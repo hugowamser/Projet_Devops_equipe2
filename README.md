@@ -2,14 +2,14 @@
 D.GUERFA A.MOUZE H.WAMSER 
 
 ## OBJECTIFS
-●	Déployer un environnement de virtualisation VMware Vsphere en interne : il a été convenu avec l'entreprise qu'au moins un hôte ESXi sera nécessaire pour le déploiement de l'infrastructure. - VMware Vsphere 
+. **Déployer un environnement** de virtualisation VMware Vsphere en interne : il a été convenu avec l'entreprise qu'au moins un hôte ESXi sera nécessaire pour le déploiement de l'infrastructure. - VMware Vsphere 
 
-•	Mettre en place des serveurs Linux (Ubuntu, CentOS, etc.) pour héberger les services de l'entreprise. (Blogs, Gitlab, etc.) : À vous de choisir le nombre de serveurs et la manière de déployer les services demandés. – Gestion de configuration (Ansible) -Docker
+. Mettre en place des serveurs Linux (Ubuntu, CentOS, etc.) pour héberger les services de l'entreprise. (Blogs, Gitlab, etc.) : À vous de choisir le nombre de serveurs et la manière de déployer les services demandés. – Gestion de configuration (Ansible) -Docker
 
-•	Configurer un  AD
-•	Configurer un DNS
+. Configurer un AD
+. Configurer un DNS
 
-•	Mettre en place des solutions de monitoring pour surveiller l'état des machines virtuelles, des conteneurs, des réseaux, des serveurs, etc., et recevoir des alertes en cas de problème. (Stack Prometheus Grafana, Stack Telegraf influx Grafana, etc.)
+. Mettre en place des solutions de **monitoring pour surveiller** l'état des machines virtuelles, des conteneurs, des réseaux, des serveurs, etc., et recevoir des alertes en cas de problème. (Stack Prometheus Grafana, Stack Telegraf influx Grafana, etc.)
 
 → Évaluation des besoins et planification : avant de déployer l'environnement, il est important d'évaluer les besoins de l'entreprise et de planifier en conséquence. Cela implique de déterminer les ressources matérielles et logicielles nécessaires, la configuration réseau requise, ainsi que la planification de la disponibilité et de la sécurité.
 
