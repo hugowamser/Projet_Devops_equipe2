@@ -48,9 +48,6 @@ Machines :
 5.	Base de donnée 
 6.	Windows Clientes
 
-…
-
-
 ## Documentation 
 ### Prérequis logiciels ou matériels 
 ## Outils – techno utilisés
