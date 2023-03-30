@@ -1,7 +1,9 @@
 # Projet_Devops_equipe2
-D.GUERFA A.MOUZE H.WAMSER 
+
+S.TOUAHRI D.GUERFA A.MOUZE H.WAMSER 
 
 ## OBJECTIFS
+
 . **Déployer un environnement** de virtualisation VMware Vsphere en interne : il a été convenu avec l'entreprise qu'au moins un hôte ESXi sera nécessaire pour le déploiement de l'infrastructure. - VMware Vsphere 
 
 . Mettre en place des serveurs Linux (Ubuntu, CentOS, etc.) pour héberger les services de l'entreprise. (Blogs, Gitlab, etc.) : À vous de choisir le nombre de serveurs et la manière de déployer les services demandés. – Gestion de configuration (Ansible) -Docker
@@ -14,10 +16,16 @@ D.GUERFA A.MOUZE H.WAMSER
 → Évaluation des besoins et planification : avant de déployer l'environnement, il est important d'évaluer les besoins de l'entreprise et de planifier en conséquence. Cela implique de déterminer les ressources matérielles et logicielles nécessaires, la configuration réseau requise, ainsi que la planification de la disponibilité et de la sécurité.
 
 ## CAHIER DES CHARGES
+
 ### Création d’un site web
+
 Wordpress 
+
 ### Création d’un Git  
+
 GitLab ou Gitea ? 
+Gitea open source et gratuit
+
 ### Architecture 
 
 IMAGES IMAGES IMAGES
@@ -49,9 +57,13 @@ Machines :
 6.	Windows Clientes
 
 ## Documentation 
+
 ### Prérequis logiciels ou matériels 
+
 ## Outils – techno utilisés
+
 Présentation de l’outils, Procédure d’installation, (toute autre procédure tel que le déploiement par exemple du docker)
+
 ### Vmware - Vsphere : (Vcenter et min un ESXI)
 
 -	Sélection des composants VMware : pour le déploiement d'un environnement de virtualisation VMware, un ou plusieurs hôtes ESXi, ainsi que d'un serveur vCenter pour la gestion centralisée.
@@ -75,6 +87,7 @@ Présentation de l’outils, Procédure d’installation, (toute autre procédur
 
 
 ### Ansible
+
 Pas vagrante car ???
 Pas jenkings car ???
 Gestion de configuration : 
@@ -83,23 +96,33 @@ Gestion de configuration :
 ·         Ansible utilise une syntaxe simple et facile à comprendre pour décrire les tâches à effectuer sur les serveurs
 
 ### Docker
+
 Prometheus & Grafana
 	-Pourquoi Prometheus : Grosse Communauté et légé
+	
 ### Gitlab : 
+
 ·         Permet de gérer les dépôts Git, de gérer les projets, de suivre les problèmes et de collaborer sur le code. Permet de stocker le code source des applications et de gérer les versions
 ·         Collaborer avec d'autres membres de l'équipe
 
 ## Services
+
 ### Service de messagerie professionnelle 
+
 qui permettra aux employés de communiquer efficacement entre eux et avec les clients mais d’assurer une certaine sécurité dans ces échanges
 Service de sauvegarde et de restauration des données 
 les entreprises doivent être en mesure de protéger leurs données critiques et de les récupérer en cas de perte ou de sinistre. Des solutions comme Veeam ou Acronis peuvent être envisagées.
+
 ### Service de gestion de projet :
+
 Gitlab
+
 ### Service web : 
+
 création et hébergement d’un site web/blog sur WordPress hébergé en interne, sécurisé (protocole HTTPS), evolutif via docker et ansible ????
 
  ### AD/DNS 
+ 
 ●	Configurer un Active Directory pour l'authentification des utilisateurs.
 
 -	Renommer le PC (exemple : SOMILY-AD01)
@@ -122,6 +145,7 @@ Service Support (5 personnes)
 -
 
 ### AD/DNS :
+
 ·         Active Directory est un service d'annuaire développé par Microsoft pour gérer l'authentification des utilisateurs et des ordinateurs
 ·         Permet de centraliser l'administration des comptes d'utilisateurs et de définir des politiques de sécurité pour l'ensemble du réseau
 ·         DNS est un service qui permet de résoudre les noms de domaine en adresses IP
@@ -138,10 +162,17 @@ Serveur DNS via AD ou configuration DNS sur LINUX ??????
 ### DHCP
 
 ### Monitoring : 
+
 ·         Prometheus et Grafana sont deux solutions open-source de monitoring populaires
 ·         Prometheus est un outil de surveillance de la performance qui collecte des données sur les ressources système, les applications et les services
-·         Grafana est une plateforme de visualisation de données qui permet de créer des tableaux de bord et des graphiques pour visualiser les données collectées par #### Prometheus
-·         Telegraf et InfluxDB sont une autre paire de solutions de surveillance qui peuvent être utilisées pour surveiller les machines virtuelles, les conteneurs et #### les réseaux
+·         Grafana est une plateforme de visualisation de données qui permet de créer des tableaux de bord et des graphiques pour visualiser les données collectées par 
+
+#### Prometheus
+
+·         Telegraf et InfluxDB sont une autre paire de solutions de surveillance qui peuvent être utilisées pour surveiller les machines virtuelles, les conteneurs et 
+
+#### les réseaux
+
 ·         Telegraf collecte les données de performance et les envoie à InfluxDB pour stockage et analyse
 
 
