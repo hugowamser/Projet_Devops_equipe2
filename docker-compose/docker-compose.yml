@@ -1,0 +1,164 @@
+version:  '3.1'
+
+services: 
+  reverseproxy:
+    image: nginx:latest
+    container_name: nginxrp
+    volumes:
+    - ./nginx/core.conf:/etc/nginx/conf.d/core.conf
+    - ./nginx/proxy.conf:/etc/nginx/conf.d/proxy.conf
+    - ./nginx/wordpress.conf:/etc/nginx/conf.d/wordpress.conf
+    - ./nginx/html:/var/www/html
+    ports: 
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - wordpress
+      - db
+      - gitea
+
+  wordpress:
+    image: wordpress:latest
+    restart: always
+    ports:
+      - "8081:80"
+    container_name: wordpress
+    volumes:
+    - ./wordpress/wp:/var/www/html
+    depends_on:
+     - db
+    environment:
+      WORDPRESS_DB_HOST: "db"
+      WORDPRESS_DB_USER: "wordpress"
+      WORDPRESS_DB_PASSWORD: "wordpress"
+      WORDPRESS_DB_NAME: "wordpress"
+
+  db:
+    image: mysql:latest
+    container_name: db
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./mysql/db:/var/lib/mysql
+      - ./mysql/conf.d:/etc/mysql/conf.d
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "wordpress"
+      MYSQL_USER: "wordpress"
+      MYSQL_PASSWORD: "wordpress"
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    restart: always
+    ports:
+      - "8082:80"
+    container_name: phpmyadmin
+    depends_on:
+      - db
+    environment:
+      PMA_HOST: "db"
+      PMA_USER: "root"
+      PMA_PASSWORD: "root"
+      PMA_ARBITRARY: 1
+
+  gitea:
+    image: gitea/gitea:latest
+    restart: always
+    ports:
+      - "3002:3000"
+      - "22:22"
+    container_name: gitea
+    volumes:
+      - ./gitea:/data
+    depends_on:
+      - db
+    environment:
+      USER_UID: 1000
+      USER_GID: 1000
+      DB_TYPE: "mysql"
+      DB_HOST: "db:3306"
+      DB_NAME: "gitea"
+      DB_USER: "gitea"
+      DB_PASSWD: "gitea"
+      ROOT_URL: "http://localhost:3000/"
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    volumes:
+      - ./prometheus:/etc/prometheus
+      - prometheus_data:/prometheus
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+    restart: always
+    ports:
+      - "9090:9090"
+
+  alertmanager:
+    image: prom/alertmanager:latest
+    container_name: alertmanager
+    volumes:
+      - ./alertmanager:/etc/alertmanager
+    command:
+      - '--config.file=/etc/alertmanager/config.yml'
+      - '--storage.path=/alertmanager'
+    restart: always
+    ports:
+      - "9093:9093"
+
+  nodeexporter:
+    image: prom/node-exporter:latest
+    container_name: nodeexporter
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    command:
+      - '--path.procfs=/host/proc'
+      - '--path.rootfs=/rootfs'
+      - '--path.sysfs=/host/sys'
+      - '--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)'
+    restart: always
+    ports:
+      - "9100:9100"
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    container_name: cadvisor
+    privileged: true
+    devices:
+      - /dev/kmsg:/dev/kmsg
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker:/var/lib/docker:ro
+      #- /cgroup:/cgroup:ro #doesn't work on MacOS only for Linux
+    restart: always
+    ports:
+      - "8080:8080"
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards
+      - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
+    environment:
+      - GF_SECURITY_ADMIN_USER=${ADMIN_USER:-admin}
+      - GF_SECURITY_ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin}
+      - GF_USERS_ALLOW_SIGN_UP=false
+    restart: always
+    ports:
+      - "3001:3000"
+
+volumes:
+  grafana_data:
+  prometheus_data:
+  db_data:
