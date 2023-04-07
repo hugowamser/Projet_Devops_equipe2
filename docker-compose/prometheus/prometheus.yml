@@ -12,11 +12,16 @@ rule_files:
   - "alert.rules"
 
 # A scrape configuration containing exactly one endpoint to scrape.
+
 scrape_configs:
   - job_name: 'nodeexporter'
     scrape_interval: 5s
     static_configs:
       - targets: ['nodeexporter:9100']
+
+  - job_name: 'wordpress'
+    static_configs:
+      - targets: ['wordpress:8081']
 
   - job_name: 'cadvisor'
     scrape_interval: 5s
@@ -26,14 +31,7 @@ scrape_configs:
   - job_name: 'prometheus'
     scrape_interval: 10s
     static_configs:
-      - targets: ['141.94.6.197:9090']
-
-  - job_name: 'pushgateway'
-    scrape_interval: 10s
-    honor_labels: true
-    static_configs:
-      - targets: ['pushgateway:9091']
-
+      - targets: ['prometheus:9090']
 
 alerting:
   alertmanagers:

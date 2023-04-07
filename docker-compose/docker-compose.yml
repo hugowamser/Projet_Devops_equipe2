@@ -15,7 +15,6 @@ services:
     depends_on:
       - wordpress
       - db
-      - gitea
 
   wordpress:
     image: wordpress:latest
@@ -36,6 +35,9 @@ services:
   db:
     image: mysql:latest
     container_name: db
+    restart: always
+    # ports:
+    #   - "3306:3306"
     volumes:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
       - ./mysql/db:/var/lib/mysql
@@ -60,26 +62,26 @@ services:
       PMA_PASSWORD: "root"
       PMA_ARBITRARY: 1
 
-  gitea:
-    image: gitea/gitea:latest
-    restart: always
-    ports:
-      - "3002:3000"
-      - "22:22"
-    container_name: gitea
-    volumes:
-      - ./gitea:/data
-    depends_on:
-      - db
-    environment:
-      USER_UID: 1000
-      USER_GID: 1000
-      DB_TYPE: "mysql"
-      DB_HOST: "db:3306"
-      DB_NAME: "gitea"
-      DB_USER: "gitea"
-      DB_PASSWD: "gitea"
-      ROOT_URL: "http://localhost:3000/"
+  # gitea:
+  #   image: gitea/gitea:latest
+  #   restart: always
+  #   ports:
+  #     - "3002:3000"
+  #     - "22:22"
+  #   container_name: gitea
+  #   volumes:
+  #     - ./gitea:/data
+  #   depends_on:
+  #     - db
+  #   environment:
+  #     USER_UID: 1000
+  #     USER_GID: 1000
+  #     DB_TYPE: "mysql"
+  #     DB_HOST: "db:3306"
+  #     DB_NAME: "gitea"
+  #     DB_USER: "gitea"
+  #     DB_PASSWD: "gitea"
+  #     ROOT_URL: "http://localhost:3000/"
 
   prometheus:
     image: prom/prometheus:latest
@@ -93,8 +95,8 @@ services:
       - '--storage.tsdb.path=/prometheus'
       - '--web.console.libraries=/etc/prometheus/console_libraries'
       - '--web.console.templates=/etc/prometheus/consoles'
-      - '--storage.tsdb.retention.time=200h'
-      - '--web.enable-lifecycle'
+      # - '--storage.tsdb.retention.time=200h'
+      # - '--web.enable-lifecycle'
     restart: always
     ports:
       - "9090:9090"
