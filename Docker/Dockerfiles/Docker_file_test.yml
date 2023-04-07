@@ -3,4 +3,3 @@ services:
   hello:
     image: alpine
     command: echo "Hello"
-
