@@ -10,9 +10,11 @@
         dest: "{{path}}"
       register: git_clone
 
-    - name: Executer le docker compose
-      docker_compose:
-        project_src: 
-          - "{{path}}/Docker/mariadb/docker-compose.yml"
-          - 
-        state: present
+#A tester, en attente des container docker-compose pour executer les services 
+#
+#    - name: Executer le docker compose
+#      docker_compose:
+#        project_src: 
+#          - "{{path}}/Docker/mariadb/docker-compose.yml"
+#          - 
+#        state: present
