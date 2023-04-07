@@ -30,16 +30,16 @@ Gitea open source et gratuit
 
 IMAGES IMAGES IMAGES
 
-. seau interne : (perspective reverse proxy pour la sécurité ?)
-. Services :
-o	Service de messagerie professionnels 
-o	Service de sauvegarde et de restauration (Redondances ? ESXI)
-o	Service de gestion de projet (Git sur le net) √
-o	Service web
-o	Service AD/DNS/DHCP √
-o	Service Monithoring √
-o	Service de base de données√
-o	Service de sécurité
+- seau interne : (perspective reverse proxy pour la sécurité ?)
+- Services :
+- Service de messagerie professionnels 
+- Service de sauvegarde et de restauration (Redondances ? ESXI)
+- Service de gestion de projet (Git sur le net) √
+- Service web
+- Service AD/DNS/DHCP √
+- Service Monithoring √
+- Service de base de données√
+- Service de sécurité
 
 Machines :
 1.	Windows Server - AD, DNS, DHCP
