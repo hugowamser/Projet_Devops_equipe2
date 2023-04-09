@@ -239,5 +239,6 @@ Pour garantir la continuité de l’activité en cas de sinistre il est nécessa
 6. Microsoft, M. (2023). Documents GitHub - De l’aide où que vous soyez dans votre parcours GitHub. Documents GitHub. https://docs.github.com/en/get-started/quickstart/hello-world
 7. SoundCloud, S. (2023). Prometheus. Overview | Prometheus. https://prometheus.io/docs/introduction/overview/
 8. Torkel Ödegaard, TO. (2023). Grafana. Grafana Labs. https://grafana.com/docs/grafana/latest/introduction/
+9. Matthew Mullenweg et Mike Little, MM et ML. (2023). Documentation. WordPress.org Documentation. https://wordpress.org/documentation/
 
 
