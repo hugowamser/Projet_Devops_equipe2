@@ -169,10 +169,6 @@ Serveur DNS via AD ou configuration DNS sur LINUX ??????
 
 #### Prometheus
 
-Prometheus est un système open-source qui se définit comme étant une boîte à outils de surveillance et d’alerte. Son utilisation réside dans la collecte de métriques à partir de serveurs, applications, cloud et bases de données, suivi d’un stockage de ces informations métriques.
-Prometheus est un système flexible et extensible, car il est possible de créer plusieurs types de tableaux de bord ainsi que des alertes personnalisées. Sa flexibilité est liée à l’utilisation du langage de requête PromQL.
-Les composants de l'écosystème Prometheus sont : le serveur principal, les bibliothèques clientes, la passerelle push, les exportateurs, l’AlertManager et d’autres outils de soutien.
-
 ·         Telegraf et InfluxDB sont une autre paire de solutions de surveillance qui peuvent être utilisées pour surveiller les machines virtuelles, les conteneurs et 
 
 #### les réseaux
