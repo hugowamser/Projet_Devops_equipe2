@@ -204,4 +204,44 @@ Service de sécurité ?
 Redondances des VM permettant une reprise d’activité immédiate en cas de panne
 Plusieurs ESXI permettant la redondances en cas de panne d’une VM avec un services (doublé chaque VM ayant un service ? )
 
+### Plan de reprise d'activité (PRA)
+
+1. Présentation des différents scénarios de sinistre majeur.
+
+- Épidémie tels que la crise sanitaire du Coronavirus
+- Catastrophe naturelle par exemple une inondation
+- Incendie
+- Panne du système dû au virus, au cyberattaque, au cybercrime, à la perte, au vol ou à la disparition de données sensible.
+
+2. Mise en place d'un plan de reprise d'activité (PRA)
+
+Pour garantir la continuité de l’activité en cas de sinistre il est nécessaire d’établir un plan de reprise d’activité (PRA). Dans un PRA on retrouve plusieurs éléments notamment :
+
+- Vérification des normes et de la réglementation.
+- Définir les responsabilités de chacun dans la réalisation du plan de reprise d'activités
+- Réaliser un inventaire des outils informatiques
+- Construction d'un cahier des charges avec des précisions sur les applications informatiques critiques.
+- Prévoir un budget adéquat pour le plan de reprise d'activités.
+- Identification du système de secours à mettre en place en cas de sinistre (site de secours).
+- Choisir un modèle de sauvegarde de données.
+- Prévoir des mesures de mises à jour régulières pour tester le plan de reprise d'activités .
+
+3. Présentation des solutions de reprise d'activité
+
+
+## Bibliographie
+
+1. Linux : https://linux.die.net/Intro-Linux/
+2. VMware : https://docs.vmware.com/fr/VMware-vSphere/index.html
+3. Docker : https://learn.microsoft.com/fr-fr/dotnet/architecture/microservices/
+4. Ansible :https://docs.ansible.com/ansible/latest/index.html
+5. GitHub : https://docs.github.com/en/get-started/quickstart/hello-world
+6. Prometheus : https://prometheus.io/docs/introduction/overview/
+7. Grafana : https://grafana.com/docs/grafana/latest/introduction/
+8. Wordpress :  https://fr.wordpress.org/support/
+9. Active Directory : https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview#understanding-active-directory
+10. Domain Name System : https://learn.microsoft.com/en-us/windows-server/networking/dns/dns-top
+11. PRA : https://www.c-risk.com/fr/blog/pra-plan-de-reprise-activite/
+12. Reprise d'activité : https://www.vmware.com/fr/solutions/disaster-recovery.html
+
 
