@@ -231,17 +231,6 @@ Pour garantir la continuité de l’activité en cas de sinistre il est nécessa
 
 ## Bibliographie
 
-1. Linux : https://linux.die.net/Intro-Linux/
-2. VMware : https://docs.vmware.com/fr/VMware-vSphere/index.html
-3. Docker : https://learn.microsoft.com/fr-fr/dotnet/architecture/microservices/
-4. Ansible :https://docs.ansible.com/ansible/latest/index.html
-5. GitHub : https://docs.github.com/en/get-started/quickstart/hello-world
-6. Prometheus : https://prometheus.io/docs/introduction/overview/
-7. Grafana : https://grafana.com/docs/grafana/latest/introduction/
-8. Wordpress :  https://fr.wordpress.org/support/
-9. Active Directory : https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview#understanding-active-directory
-10. Domain Name System : https://learn.microsoft.com/en-us/windows-server/networking/dns/dns-top
-11. PRA : https://www.c-risk.com/fr/blog/pra-plan-de-reprise-activite/
-12. Reprise d'activité : https://www.vmware.com/fr/solutions/disaster-recovery.html
+1. Machtelt Garrels, MG. (2002). Un guide pratique. Introduction à Linux. https://linux.die.net/Intro-Linux/
 
 
