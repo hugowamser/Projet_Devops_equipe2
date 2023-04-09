@@ -209,7 +209,7 @@ Plusieurs ESXI permettant la redondances en cas de panne d’une VM avec un serv
 1. Présentation des différents scénarios de sinistre majeur.
 
 - Épidémie tels que la crise sanitaire du Coronavirus
-- Catastrophe naturelle par exemple une inondation
+- Catastrophe naturelle, par exemple une inondation
 - Incendie
 - Panne du système dû au virus, au cyberattaque, au cybercrime, à la perte, au vol ou à la disparition de données sensible.
 
