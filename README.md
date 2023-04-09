@@ -236,5 +236,7 @@ Pour garantir la continuité de l’activité en cas de sinistre il est nécessa
 3. Cesar de la Torre, Bill Wagner et Mike Rousos, CT. *et al.* (2022). Microsoft. .NET : Architecture pour les applications .NET en conteneur.  https://dotnet.microsoft.com/en-us/download/e-book/microservices-architecture/pdf
 4. Solomon Hykes, SH. (2023). Docker docs. https://docs.docker.com/
 5. Michael DeHaan, MD. (2023). Documentation. Ansible Documentation. https://docs.ansible.com/ansible/latest/index.html
+6. Microsoft, M. (2023). Documents GitHub - De l’aide où que vous soyez dans votre parcours GitHub. Documents GitHub. https://docs.github.com/en/get-started/quickstart/hello-world
+7. SoundCloud, S. (2023). Prometheus. Overview | Prometheus. https://prometheus.io/docs/introduction/overview/
 
 
