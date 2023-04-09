@@ -232,5 +232,6 @@ Pour garantir la continuité de l’activité en cas de sinistre il est nécessa
 ## Bibliographie
 
 1. Machtelt Garrels, MG. (2002). Un guide pratique. Introduction à Linux. https://linux.die.net/Intro-Linux/
+2. Diane Greene, Edouard Bugnion, Scott Devine, Mendel Rosenblum et Edward Wang, DG. *et al* (1998). Documentation de VMware vSphere. VMware Docs. https://docs.vmware.com/fr/VMware-vSphere/index.html
 
 
