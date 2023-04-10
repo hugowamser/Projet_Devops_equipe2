@@ -239,7 +239,7 @@ Pour garantir la continuité de l’activité en cas de sinistre il est nécessa
 6. Microsoft. (2008 - 2023). Documents GitHub - De l’aide où que vous soyez dans votre parcours GitHub. Documents GitHub. https://docs.github.com/en/get-started/quickstart/hello-world
 7. SoundCloud. (2014 - 2023). Prometheus. Overview | Prometheus. https://prometheus.io/docs/introduction/overview/
 8. Torkel Ödegaard, TO. (2014 - 2023). Grafana. Grafana Labs. https://grafana.com/docs/grafana/latest/introduction/
-9. Matthew Mullenweg et Mike Little, MM et ML. (2023). Documentation. WordPress.org Documentation. https://wordpress.org/documentation/
+9. Matthew Mullenweg et Mike Little, MM et ML. (2003 - 2023). Documentation. WordPress.org Documentation. https://wordpress.org/documentation/
 10. Microsoft. (2023). Vue d’ensemble des services de domaine Active Directory. https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview
 11. Microsoft. (2023). Système de noms de domaine (DNS). https://learn.microsoft.com/en-us/windows-server/networking/dns/dns-top
 12. C-Risk. (2023). Plan de reprise d'activité. PRA : tout savoir sur le plan de reprise d'activité : https://www.c-risk.com/fr/blog/pra-plan-de-reprise-activite/
