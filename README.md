@@ -231,7 +231,7 @@ Pour garantir la continuité de l’activité en cas de sinistre il est nécessa
 
 ## Bibliographie
 
-1. Machtelt Garrels, MG. (2006). Un guide pratique. Introduction à Linux. https://linux.die.net/Intro-Linux/
+1. Machtelt Garrels, MG. (2002 - 2006). Un guide pratique. Introduction à Linux. https://linux.die.net/Intro-Linux/
 2. Diane Greene, Edouard Bugnion, Scott Devine, Mendel Rosenblum et Edward Wang, DG. *et al.* (2023). Documentation de VMware vSphere. VMware Docs. https://docs.vmware.com/fr/VMware-vSphere/index.html
 3. Cesar de la Torre, Bill Wagner et Mike Rousos, CT. *et al.* (2022). Microsoft. .NET : Architecture pour les applications .NET en conteneur.  https://dotnet.microsoft.com/en-us/download/e-book/microservices-architecture/pdf
 4. Solomon Hykes, SH. (2023). Docker docs. https://docs.docker.com/
