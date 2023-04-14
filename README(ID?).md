@@ -33,7 +33,9 @@ ____
 Présentation des outils et procédure d’installation *(exemple : toutes autres procédures tels que le déploiement par exemple du docker)*.
 
 ``1. Vmware - Vsphere``
+
 **a. Introduction**
+
 VMware vSphere est une plate-forme permettant la virtualisation, pour que les utilisateurs puissent virtualiser et gérer leur centre de données incluant le Central Processing Unit (CPU), la mise en réseau et le stockage. Plus précisément, vSphere gère ces infrastructures sous forme d'environnement d'exploitation unifié, c’est-à-dire que plusieurs machines virtuelles peuvent s’exécuter sur une seule machine physique. VMware vSphere comprend principalement vCenter Server et ESXi. Ce dernier, dit hyperviseur ESXi est une plate-forme de virtualisation s’exécutant sur un serveur physique afin de créer des machines virtuelles. Quant au service vCenter Server, il permet de gérer plusieurs hôtes ESXi connectés dans un réseau ainsi que des ressources d’hôtes.
 **b. Utilité dans l'infrastructre**
 
