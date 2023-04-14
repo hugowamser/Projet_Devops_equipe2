@@ -4,12 +4,12 @@ D.GUERFA A.MOUZE S.TOUAHRI H.WAMSER
 
 ## OBJECTIFS
 
-. **Déployer un environnement** de virtualisation VMware Vsphere en interne : il a été convenu avec l'entreprise qu'au moins un hôte ESXi sera nécessaire pour le déploiement de l'infrastructure. - VMware Vsphere 
-
-. Mettre en place des serveurs Linux (Ubuntu, CentOS, etc.) pour héberger les services de l'entreprise. (Blogs, Gitlab, etc.) : À vous de choisir le nombre de serveurs et la manière de déployer les services demandés. – Gestion de configuration (Ansible) -Docker
-
-. Configurer un AD
-. Configurer un DNS
+- **Déployer un environnement** de virtualisation VMware Vsphere en interne : un hôte ESXi sera nécessaire pour le déploiement de l'infrastructure. - VMware Vsphere 
+- Mise en place de **serveurs d'hébergement** sous Linux (Ubuntu, CentOS, etc.) pour les services 
+- Configuration des serveurs : **Ansible, Docker**
+- Configuration un **AD**
+- Configuration un **DNS**
+- **Monitoring**
 
 . Mettre en place des solutions de **monitoring pour surveiller** l'état des machines virtuelles, des conteneurs, des réseaux, des serveurs, etc., et recevoir des alertes en cas de problème. (Stack Prometheus Grafana, Stack Telegraf influx Grafana, etc.)
 
