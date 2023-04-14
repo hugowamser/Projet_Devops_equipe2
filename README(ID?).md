@@ -2,6 +2,15 @@
 
 *D.GUERFA A.MOUZE S.TOUAHRI H.WAMSER*
 
+## Introduction
+
+
+## Problématique
+
+*Comment faire pour que l'entreprise SOMILY puisse évoluer en terme de services ?*
+
+____
+
 ## Objectifs
 
 - Déployer un environnement de virtualisation VMware Vsphere en interne : un hôte ESXi sera nécessaire pour le déploiement de l’infrastructure - VMware Vsphere.
@@ -15,12 +24,7 @@
 - Configuration d’un DNS pour la résolution de domaine.
 
 - Monitoring : surveiller l’état des VM, conteneurs, réseaux... et recevoir des alertes.
-
-## Problématique
-
-*Comment faire pour que l'entreprise SOMILY puisse évoluer en terme de services ?*
-
-____
+- 
 
 ## Prérequis logiciels et/ou matériels
 
