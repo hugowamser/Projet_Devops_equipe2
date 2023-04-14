@@ -159,7 +159,7 @@ Service Support (5 personnes)
 Serveur DNS via AD ou configuration DNS sur LINUX ??????
 
 
-### DHCP
+### DHCP (Dynamic Host Control Protocol)
 
 - Service permettant l'attribution d'adresses IP et d'informations complémentaires (adresse IP du routeur, le masque de sous-réseau, la passerelle par défaut) aux clients.
 
