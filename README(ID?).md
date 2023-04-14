@@ -180,6 +180,7 @@ ____
 ``1. Service Développement (10 personnes)``
 
 **Site** : Aix en provence
+
 **Collaborateurs** :
 
 - Julien Martin
@@ -198,6 +199,7 @@ ____
 ``2. Production de Services (5personnes)``
 
 **Site** : Nantes
+
 **Collaborateur** :
 
 - Amélie Moreau 
@@ -211,6 +213,7 @@ ____
 ``3. Service Support (5 personnes)``
 
 **Site** : Paris
+
 **Collaborateur** :
 
 - James Brown
