@@ -306,3 +306,4 @@ ____
 12. C-Risk. (2021 - 2023). Plan de reprise d’activité. PRA : tout savoir sur le plan de reprise d’activité : https://www.c-risk.com/fr/blog/pra-plan-de-reprise-activite/
 13. Diane Greene, Edouard Bugnion, Scott Devine, Mendel Rosenblum et Edward Wang, DG. et al. (1998 - 2023). Solutions de reprise d’activité. Documents VMware. https://www.vmware.com/fr/solutions/disaster-recovery.html
 14. Oracle. (2000 - 2023). MySQL Documentation. MySQL. https://www.mysql.com/fr/
+15. Olivier Müller, Marc Delisle, Alexander M. Turek, Michal Čihař et Garvin Hicking, OM. et al. (2003 - 2023). phpMyAdmin - Bringing MySQL to the web. phpMyAdmin - Documentation. https://www.phpmyadmin.net/docs/
