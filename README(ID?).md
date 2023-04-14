@@ -37,6 +37,7 @@ Présentation des outils et procédure d’installation *(exemple : toutes autre
 **a. Introduction**
 
 VMware vSphere est une plate-forme permettant la virtualisation, pour que les utilisateurs puissent virtualiser et gérer leur centre de données incluant le Central Processing Unit (CPU), la mise en réseau et le stockage. Plus précisément, vSphere gère ces infrastructures sous forme d'environnement d'exploitation unifié, c’est-à-dire que plusieurs machines virtuelles peuvent s’exécuter sur une seule machine physique. VMware vSphere comprend principalement vCenter Server et ESXi. Ce dernier, dit hyperviseur ESXi est une plate-forme de virtualisation s’exécutant sur un serveur physique afin de créer des machines virtuelles. Quant au service vCenter Server, il permet de gérer plusieurs hôtes ESXi connectés dans un réseau ainsi que des ressources d’hôtes.
+
 **b. Utilité dans l'infrastructre**
 
 - Configuration d’un serveur vCenter
@@ -49,16 +50,22 @@ VMware vSphere est une plate-forme permettant la virtualisation, pour que les ut
 ``2. Docker``
 
 **a. Introduction**
+
 Docker se définit comme étant un projet open source, il repose sur un kernel Linux. Les conteneurs Docker fournissent un environnement isolé pour l'exécution de l’application, ils sont exécutables : en local dans le centre de données client, dans un fournisseur de services externe et dans le cloud. Le fonctionnement réside dans l'exécution d’un hôte Docker, sur lequel sont déployées les images Docker, comprenant l’application et ses dépendances. Une image conteneur est définie comme un moyen d’empaqueter une application ou un service pour le déployer par la suite. Par ailleurs, l’image permet de garder un environnement similaire entre les différents déploiements.
+
 **b. Utilité dans l'infrastructre**
+
 Création, déploiement et execution des services dans un conteneur afin d'améliorer l'efficacité des services sur l'ensemble de l'infrastructure.
 
 
 ``3. Ansible``
 
 **a. Introduction**
+
 Ansible est un outil open-source de gestion de configuration. Il permet de déployer rapidement des serveurs, d’automatiser les tâches récurrentes et de maintenir la cohérence de la configuration des serveurs. Ansible utilise une syntaxe simple et facile à comprendre pour décrire les tâches à effectuer sur les serveurs.
+
 **b. Utilité dans l'infrastructre**
+
 Deploiement des services sur les machines virtuelles pour automatiser les tâches et gérer les mises à jour.
 
 ### Services utilisés
@@ -66,7 +73,9 @@ Deploiement des services sur les machines virtuelles pour automatiser les tâche
 ``1. AD/DNS``
 
 **a. Introduction**
+
 Active Directory est un service d’annuaire développé par Microsoft pour gérer l’authentification des utilisateurs et des ordinateurs · Permet de centraliser l’administration des comptes d’utilisateurs et de définir des politiques de sécurité pour l’ensemble du réseau · DNS est un service qui permet de résoudre les noms de domaine en adresses IP · Solutions open-source telles que Samba pour mettre en place un service Active Directory sur des serveurs Linux, et Bind pour mettre en place un service DNS · Configurer un serveur DNS pour la résolution des noms de domaine.
+
 **b. Utilité dans l'infrastructre**
 
 - Configurer un Active Directory pour l’authentification des utilisateurs.
@@ -80,48 +89,73 @@ Active Directory est un service d’annuaire développé par Microsoft pour gér
 - Mise en place de GPOs personnalisées en fonction des services.
 
 ``2. DHCP``
+
 **a. Introduction**
+
 Le DHCP (Dynamic Host Control Protocol) est un service permettant l'attribution d'adresses IP et d'informations complémentaires (adresse IP du routeur, le masque de sous-réseau, la passerelle par défaut) aux clients. Par ailleurs, il permet la conservation des adresses IP pendant une durée définie.
+
 **b. Utilité dans l'infrastructre**
 
 ``3. Site web : Wordpress``
+
 **a. Introduction**
+
 WordPress est un logiciel de publication sur Internet de sites web et de blogs, simple d'utilisation. C'est une plateforme de publication librement distribuable, compatible, personnalisable, rapide, légère et gratuite. Créer en 2003, il est utilisé par de nombreux sites web dans le monde entier.
+
 **b. Utilité dans l'infrastructre**
+
 Création et hébergement d’un site web/blog sur WordPress hébergé en interne, sécurisé (protocole HTTPS), evolutif via docker et ansible.
 
 ``4. Base de donnée - MySQL``
+
 **a. Introduction**
+
 **b. Utilité dans l'infrastructre**
 
 ``5. PhPmyAdmin``
+
 **a. Introduction**
+
 **b. Utilité dans l'infrastructre**
 
 ``6. Nginx``
+
 **a. Introduction**
+
 **b. Utilité dans l'infrastructre**
 
 ``7. Gitea``
+
 **a. Introduction**
+
 **b. Utilité dans l'infrastructre**
 
 ``8. GitHub``
+
 **a. Introduction**
+
 **b. Utilité dans l'infrastructre**
 
 ### Surveillance
 
 ``1. Prometheus``
+
 **a. Introduction**
+
 Prometheus est un outil de surveillance de la performance qui collecte des données sur les ressources système, les applications et les services.
+
 **b. Utilité dans l'infrastructre**
+
 Surveiller les performances des applications et des services, en collectant les métriques de notre infrastructure.
 
 ``2. Grafana``
+
 **a. Introduction**
+
 Grafana est une plateforme de visualisation de données qui permet de créer des tableaux de bord et des graphiques pour visualiser les données collectées par différents types de sources de données tels que les bases de données et les services cloud.
+
 **b. Utilité dans l'infrastructre**
+
 Visualisation et analyse des données de performance de l'infrastructure afin de l'améliorer.
 ____
 
@@ -130,11 +164,15 @@ ____
 ____
 
 ``3. NodeExporter``
+
 **a. Introduction**
+
 **b. Utilité dans l'infrastructre**
 
 ``4. Conseiller``
+
 **a. Introduction**
+
 **b. Utilité dans l'infrastructre**
 
 ____
