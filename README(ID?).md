@@ -24,7 +24,6 @@ ____
 - Configuration d’un DNS pour la résolution de domaine.
 
 - Monitoring : surveiller l’état des VM, conteneurs, réseaux... et recevoir des alertes.
-- 
 
 ## Prérequis logiciels et/ou matériels
 
