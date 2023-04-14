@@ -294,18 +294,20 @@ ____
 
 ## Bibliographie
 
-1. Machtelt Garrels, MG. (2002 - 2006). Un guide pratique. Introduction à Linux. https://linux.die.net/Intro-Linux/
-2. Diane Greene, Edouard Bugnion, Scott Devine, Mendel Rosenblum et Edward Wang, DG. et al. (1998 - 2023). Documentation de VMware vSphere. Documents VMware. https://docs.vmware.com/fr/VMware-vSphere/index.html
-3. Cesar de la Torre, Bill Wagner et Mike Rousos, CT. et al. (2022). Microsoft. .NET : Architecture pour les applications .NET en conteneur. https://dotnet.microsoft.com/en-us/download/e-book/microservices-architecture/pdf
-4. Solomon Hykes, SH. (2013 - 2023). Documents Docker. https://docs.docker.com/
-5. Michael DeHaan, M.D. (2023). Documentation. Documentation Ansible. https://docs.ansible.com/ansible/latest/index.html
-6. Microsoft. (2008 - 2023). Documents GitHub - De l’aide où que vous soyez dans votre parcours GitHub. Documents GitHub. https://docs.github.com/en/get-started/quickstart/hello-world
-7. SoundCloud. (2014 - 2023). Prométhée. Vue d’ensemble | Prométhée. https://prometheus.io/docs/introduction/overview/
-8. Torkel Ödegaard, TO. (2014 - 2023). Grafana. Laboratoires Grafana. https://grafana.com/docs/grafana/latest/introduction/
-9. Matthew Mullenweg et Mike Little, MM et ML. (2003 - 2023). Documentation. WordPress.org Documentation. https://wordpress.org/documentation/
-10. Microsoft. (2012 - 2022). Vue d’ensemble des services de domaine Active Directory. https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview
-11. Microsoft. (2021 - 2023). Système de noms de domaine (DNS). https://learn.microsoft.com/en-us/windows-server/networking/dns/dns-top
-12. C-Risk. (2021 - 2023). Plan de reprise d’activité. PRA : tout savoir sur le plan de reprise d’activité : https://www.c-risk.com/fr/blog/pra-plan-de-reprise-activite/
-13. Diane Greene, Edouard Bugnion, Scott Devine, Mendel Rosenblum et Edward Wang, DG. et al. (1998 - 2023). Solutions de reprise d’activité. Documents VMware. https://www.vmware.com/fr/solutions/disaster-recovery.html
-14. Oracle. (2000 - 2023). MySQL Documentation. MySQL. https://www.mysql.com/fr/
-15. Olivier Müller, Marc Delisle, Alexander M. Turek, Michal Čihař et Garvin Hicking, OM. et al. (2003 - 2023). phpMyAdmin - Bringing MySQL to the web. phpMyAdmin - Documentation. https://www.phpmyadmin.net/docs/
+1. C-Risk. (2021 - 2023). Plan de reprise d’activité. PRA : tout savoir sur le plan de reprise d’activité : https://www.c-risk.com/fr/blog/pra-plan-de-reprise-activite/
+2. Cesar de la Torre, Bill Wagner et Mike Rousos, CT. et al. (2022). Microsoft. .NET : Architecture pour les applications .NET en conteneur. https://dotnet.microsoft.com/en-us/download/e-book/microservices-architecture/pdf
+3. Diane Greene, Edouard Bugnion, Scott Devine, Mendel Rosenblum et Edward Wang, DG. et al. (1998 - 2023). Solutions de reprise d’activité. Documents VMware. https://www.vmware.com/fr/solutions/disaster-recovery.html
+4. Diane Greene, Edouard Bugnion, Scott Devine, Mendel Rosenblum et Edward Wang, DG. et al. (1998 - 2023). Documentation de VMware vSphere. Documents VMware. https://docs.vmware.com/fr/VMware-vSphere/index.html
+5. Machtelt Garrels, MG. (2002 - 2006). Un guide pratique. Introduction à Linux. https://linux.die.net/Intro-Linux/
+6. Matthew Mullenweg et Mike Little, MM et ML. (2003 - 2023). Documentation. WordPress.org Documentation. https://wordpress.org/documentation/
+7. Michael DeHaan, M.D. (2023). Documentation. Documentation Ansible. https://docs.ansible.com/ansible/latest/index.html
+8. Microsoft. (2008 - 2023). Documents GitHub - De l’aide où que vous soyez dans votre parcours GitHub. Documents GitHub. https://docs.github.com/en/get-started/quickstart/hello-world
+9. Microsoft. (2012 - 2022). Vue d’ensemble des services de domaine Active Directory. https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview
+10. Microsoft. (2021 - 2023). Système de noms de domaine (DNS). https://learn.microsoft.com/en-us/windows-server/networking/dns/dns-top
+11. Olivier Müller, Marc Delisle, Alexander M. Turek, Michal Čihař et Garvin Hicking, OM. et al. (2003 - 2023). phpMyAdmin - Bringing MySQL to the web. phpMyAdmin - Documentation. https://www.phpmyadmin.net/docs/
+12. Oracle. (2000 - 2023). MySQL Documentation. MySQL. https://www.mysql.com/fr/
+13. Solomon Hykes, SH. (2013 - 2023). Documents Docker. https://docs.docker.com/
+14. SoundCloud. (2014 - 2023). Prométhée. Vue d’ensemble | Prométhée. https://prometheus.io/docs/introduction/overview/
+15. Torkel Ödegaard, TO. (2014 - 2023). Grafana. Laboratoires Grafana. https://grafana.com/docs/grafana/latest/introduction/
+
+
