@@ -1,20 +1,22 @@
 version:  '3.1'
-
 services: 
-  reverseproxy:
+  nginx:
     image: nginx:latest
-    container_name: nginxrp
+    # restart: always
+    container_name: nginx
     volumes:
-    - ./nginx/core.conf:/etc/nginx/conf.d/core.conf
-    - ./nginx/proxy.conf:/etc/nginx/conf.d/proxy.conf
-    - ./nginx/wordpress.conf:/etc/nginx/conf.d/wordpress.conf
+    - ./nginx.conf:/etc/nginx/nginx.conf
     - ./nginx/html:/var/www/html
+    - ./ssl:/etc/nginx/ssl
     ports: 
       - "80:80"
       - "443:443"
     depends_on:
       - wordpress
-      - db
+# networks:
+#   default:
+#     external:
+#       name: nginx-proxy
 
   wordpress:
     image: wordpress:latest
