@@ -26,6 +26,10 @@ Wordpress
 GitLab ou Gitea ? 
 Gitea open source et gratuit
 
+### Gitea
+
+Gitea est un service de développement logiciel, permettant de gérer, partager, collaborer et stocker des projets sous forme de code. C'est un logiciel open source et gratuit sous licence MIT *(Massachusetts Institute of Technology License)*. Il présente une similarité avec GitLab, GitHub et Bitbucket. Les avantages de Gitea repose sur sa rapidité, sa légereté, sa facilité d'installation et son interface graphique intuitive.
+
 ### Architecture 
 
 IMAGES IMAGES IMAGES
