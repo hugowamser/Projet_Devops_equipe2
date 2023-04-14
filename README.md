@@ -240,7 +240,7 @@ Les machines virtuelles que nous déployons proviennent de la plateforme VMware 
 
 - ``Site Recovery Manager`` est disponible sous forme de licence ou de service afin de fournir une automatisation pour la récupération d'applications et de données.
 
-Ces produits sont compris dans le VMware DRaaS (Disaster Recovery as a Service). Ils sont un réel avantage pour l'entreprise car ils réduisent le temps d'arrêt après un sinistre ou un incident, tout en minimisant la perte de données. 
+Ces produits sont compris dans le VMware DRaaS *(Disaster Recovery as a Service)*. Ils sont un réel avantage pour l'entreprise car ils réduisent le temps d'arrêt après un sinistre ou un incident, tout en minimisant la perte de données. 
 
 
 ## Bibliographie
