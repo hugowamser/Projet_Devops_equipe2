@@ -58,13 +58,13 @@ Machines :
 
 ## Documentation 
 
-### Prérequis logiciels ou matériels 
+### Prérequis matériels (logiciels) 
 
-## Outils – techno utilisés
+## Outils – technologies utilisées
 
 Présentation de l’outils, Procédure d’installation, (toute autre procédure tel que le déploiement par exemple du docker)
 
-### Vmware - Vsphere : (Vcenter et min un ESXI)
+### Vmware - Vsphere (Vcenter et ESXi)
 
 -	Sélection des composants VMware : pour le déploiement d'un environnement de virtualisation VMware, un ou plusieurs hôtes ESXi, ainsi que d'un serveur vCenter pour la gestion centralisée.
 -	Installation de l'hôte ESXi sur un serveur physique dédié en vérifiant que le serveur répond aux exigences de configuration matérielle minimale requise pour l'installation d'ESXi.
@@ -179,7 +179,7 @@ Serveur DNS via AD ou configuration DNS sur LINUX ??????
 
 ·         Telegraf et InfluxDB sont une autre paire de solutions de surveillance qui peuvent être utilisées pour surveiller les machines virtuelles, les conteneurs et 
 
-#### les réseaux
+#### Les réseaux
 
 ·         Telegraf collecte les données de performance et les envoie à InfluxDB pour stockage et analyse
 
