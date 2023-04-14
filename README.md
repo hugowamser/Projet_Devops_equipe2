@@ -228,6 +228,16 @@ Pour garantir la continuité de l’activité en cas de sinistre il est nécessa
 
 3. Présentation des solutions de reprise d'activité
 
+Les machines virtuelles que nous déployons proviennent de la plateforme VMware vSphere. Celle-ci propose des solutions de reprise d'activité après un sinistre ou un incident à l'aide de différents produits :
+
+- ``VMware Cloud Disaster Recovery`` est un service à la demande. Il permet un stockage des données de l'entreprise en les répliquant sur une infrastructure cloud distante.
+
+- ``VMware Site Recovery`` est un service proposant une protection des charges de travail en local et sur le cloud. Cela consiste en une réplication des applications ainsi que des données sur un site de reprise.
+
+- ``Site Recovery Manager`` est disponible sous forme de licence ou de service afin de fournir une automatisation pour la récupération d'applications et de données.
+
+Ces produits sont compris dans le VMware DRaaS (Disaster Recovery as a Service). Ils sont un réel avantage pour l'entreprise car ils réduisent le temps d'arrêt après un sinistre ou un incident, tout en minimisant la perte de données. 
+
 
 ## Bibliographie
 
@@ -240,9 +250,9 @@ Pour garantir la continuité de l’activité en cas de sinistre il est nécessa
 7. SoundCloud. (2014 - 2023). Prometheus. Overview | Prometheus. https://prometheus.io/docs/introduction/overview/
 8. Torkel Ödegaard, TO. (2014 - 2023). Grafana. Grafana Labs. https://grafana.com/docs/grafana/latest/introduction/
 9. Matthew Mullenweg et Mike Little, MM et ML. (2003 - 2023). Documentation. WordPress.org Documentation. https://wordpress.org/documentation/
-10. Microsoft. (2023). Vue d’ensemble des services de domaine Active Directory. https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview
-11. Microsoft. (2023). Système de noms de domaine (DNS). https://learn.microsoft.com/en-us/windows-server/networking/dns/dns-top
-12. C-Risk. (2023). Plan de reprise d'activité. PRA : tout savoir sur le plan de reprise d'activité : https://www.c-risk.com/fr/blog/pra-plan-de-reprise-activite/
+10. Microsoft. (2012 - 2022). Vue d’ensemble des services de domaine Active Directory. https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview
+11. Microsoft. (2021 - 2023). Système de noms de domaine (DNS). https://learn.microsoft.com/en-us/windows-server/networking/dns/dns-top
+12. C-Risk. (2021 - 2023). Plan de reprise d'activité. PRA : tout savoir sur le plan de reprise d'activité : https://www.c-risk.com/fr/blog/pra-plan-de-reprise-activite/
 13. Diane Greene, Edouard Bugnion, Scott Devine, Mendel Rosenblum et Edward Wang, DG. *et al.* (1998 - 2023). Solutions de reprise d’activité. VMware Docs. https://www.vmware.com/fr/solutions/disaster-recovery.html
 
 
