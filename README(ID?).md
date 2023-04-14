@@ -96,6 +96,8 @@ Le DHCP (Dynamic Host Control Protocol) est un service permettant l'attribution 
 
 **b. Utilité dans l'infrastructre**
 
+Simplifier la gestion du réseau tout en évitant de potentielles erreurs.
+
 ``3. Site web : Wordpress``
 
 **a. Introduction**
