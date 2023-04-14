@@ -228,6 +228,16 @@ Pour garantir la continuité de l’activité en cas de sinistre il est nécessa
 
 3. Présentation des solutions de reprise d'activité
 
+Les machines virtuelles que nous déployons proviennent de la plateforme VMware vSphere. Celle-ci propose des solutions de reprise d'activité après un sinistre ou un incident à l'aide de différents produits :
+
+- ``VMware Cloud Disaster Recovery`` est un service à la demande. Il permet un stockage des données de l'entreprise en les répliquant sur une infrastructure cloud distante.
+
+- ``VMware Site Recovery`` est un service proposant une protection des charges de travail en local et sur le cloud. Cela consiste en une réplication des applications ainsi que des données sur un site de reprise.
+
+- ``Site Recovery Manager`` est disponible sous forme de licence ou de service afin de fournir une automatisation pour la récupération d'applications et de données.
+
+Ces produits sont compris dans le VMware DRaaS (Disaster Recovery as a Service). Ils sont un réel avantage pour l'entreprise car ils réduisent le temps d'arrêt après un sinistre ou un incident, tout en minimisant la perte de données. 
+
 
 ## Bibliographie
 
