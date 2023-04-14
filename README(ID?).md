@@ -125,6 +125,8 @@ Gérer et stocker les données des services, tels que le WordPress.
 
 **a. Introduction**
 
+phpMyAdmin est un logiciel open source écrit en PHP qui permet de gérer l'administration d’un serveur de base de données MySQL ou MariaDB à partir d'une interface web. Il est possible pour les utilisateurs de réaliser la plupart des tâches d’administration, dont la création d’une base de données, l’exécution de requêtes, et l’ajout de plusieurs comptes. IL est requis de posseder un serveur web (tel que Apache ou Nginx) afin d'installer les fichiers de phpMyAdmin.
+
 **b. Utilité dans l'infrastructre**
 
 ``6. Nginx``
