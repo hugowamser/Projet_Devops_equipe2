@@ -161,6 +161,10 @@ Serveur DNS via AD ou configuration DNS sur LINUX ??????
 
 ### DHCP
 
+● Service permettant l'attribution d'adresses IP aux clients.
+● Service permettant l'attribution d'informations complémentaires (adresse IP du routeur, le masque de sous-réseau, la passerelle par défaut) aux clients.
+● Conservation des adresses IP pendant une durée définie.
+
 ### Monitoring : 
 
 ·         Prometheus et Grafana sont deux solutions open-source de monitoring populaires
