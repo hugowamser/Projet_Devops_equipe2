@@ -116,7 +116,11 @@ Création et hébergement d’un site web/blog sur WordPress hébergé en intern
 
 **a. Introduction**
 
+MySQL Database est un service de base de données open source, qui combine les transactions, l’analyse et les services d’apprentissage automatique. Il est disponible sur Oracle Cloud Infrastructure, Amazon Web Service et Oracle Database Service in Azure (ODSA) SQL (Structured Query Language) est un langage normalisé et utilisé pour accéder aux bases de données.
+
 **b. Utilité dans l'infrastructre**
+
+Gérer et stocker les données des services, tels que le WordPress. 
 
 ``5. PhPmyAdmin``
 
