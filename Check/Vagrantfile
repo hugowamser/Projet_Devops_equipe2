@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
 	
 		config.vm.define "ansible" do |ansible|
 			ansible.vm.box = "bento/ubuntu-22.04"
-			ansible.vm.network "public_network", bridge: "TP-Link GIGABIT ETHERNET PCI EXPRESS ADAPTER", ip: "192.168.2.2"
+			ansible.vm.network "private_network", ip: "192.168.2.2"
 			ansible.vm.hostname = "ansible"
 			
 			ansible.vm.provider "virtualbox" do |v|
@@ -44,7 +44,7 @@ Vagrant.configure("2") do |config|
 
 		config.vm.define "wordpress" do |wordpress|
 			wordpress.vm.box = "bento/ubuntu-22.04"
-			wordpress.vm.network "public_network", bridge: "TP-Link GIGABIT ETHERNET PCI EXPRESS ADAPTER", ip: "192.168.1.1"
+			wordpress.vm.network "private_network", ip: "192.168.5.2"
 			wordpress.vm.hostname = "wordpress"
 			
 			wordpress.vm.provider "virtualbox" do |v|
@@ -81,7 +81,7 @@ Vagrant.configure("2") do |config|
 
 		config.vm.define "promgraf" do |promgraf|
 			promgraf.vm.box = "bento/ubuntu-22.04"
-			promgraf.vm.network "public_network", bridge: "TP-Link GIGABIT ETHERNET PCI EXPRESS ADAPTER", ip: "192.168.4.1"
+			promgraf.vm.network "private_network", ip: "192.168.4.2"
 			promgraf.vm.hostname = "promgraf"
 			
 			promgraf.vm.provider "virtualbox" do |v|
@@ -117,7 +117,7 @@ Vagrant.configure("2") do |config|
 		
 		config.vm.define "db" do |db|
 			db.vm.box = "bento/ubuntu-22.04"
-			db.vm.network "public_network", bridge: "TP-Link GIGABIT ETHERNET PCI EXPRESS ADAPTER", ip: "192.168.2.1"
+			db.vm.network "private_network", ip: "192.168.2.3"
 			db.vm.hostname = "db"
 			
 			db.vm.provider "virtualbox" do |v|
@@ -126,7 +126,7 @@ Vagrant.configure("2") do |config|
 			v.cpus = 2
 			end
 			
-			promgraf.vm.provision "shell", inline: <<-SHELL
+			db.vm.provision "shell", inline: <<-SHELL
        			apt-get update
         		apt-get install -y bash vim python3-pip
 				ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa
@@ -152,12 +152,12 @@ Vagrant.configure("2") do |config|
 			end
 
 		config.vm.define "winserv" do |winserv|
-			winserv.vm.box = "opentable/win-2019-standard-amd64-nocm"
-			winserv.vm.network "public_network", bridge: "TP-Link GIGABIT ETHERNET PCI EXPRESS ADAPTER"
+			winserv.vm.box = "StefanScherer/windows_2019"
+			winserv.vm.network "private_network", ip: "192.168.3.1", bridge: "TP-Link GIGABIT ETHERNET PCI EXPRESS ADAPTER"
 			winserv.vm.hostname = "winserv"
 					
 			winserv.vm.provider "virtualbox" do |v|
-			vb.gui = true
+			v.gui = true
 			v.name = "winserv"
 			v.memory = 4096
 			v.cpus = 2
