@@ -188,12 +188,19 @@ Node Exporter est un outil open source de monitoring système pour les serveurs 
 **b. Utilité dans l'infrastructre**
 
 Il permet de collecter des métriques système **sur l'ensemble des VMs de l'infrastructure** telles que l'utilisation du processeur, la mémoire utilisée, l'utilisation du disque et du réseau, ainsi que des informations sur le système d'exploitation telles que le nombre de processus en cours d'exécution et le nombre de fichiers ouverts.
+Ces métriques seront ensuite exposées à Prometheus.
 
-``4. Conseiller``
+``4. Cadvisor``
 
 **a. Introduction**
 
+cAdvisor est un outil de surveillance de conteneurs open source qui permet de collecter, d'aggréger et d'exposer des métriques et des informations sur les conteneurs.
+
 **b. Utilité dans l'infrastructre**
+
+Dans cette infrastructure il sera déployé sur tous les hôtes où sont déployés des conteneurs car il permet de collecter des métriques sur les conteneurs et les images Docker qui seront ensuite exposées à Prometheus.
+
+``5. AlertManager``
 
 ____
 
