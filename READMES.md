@@ -183,7 +183,11 @@ ____
 
 **a. Introduction**
 
+Node Exporter est un outil open source de monitoring système pour les serveurs utilisant les systèmes d'exploitations Linux et Windows. 
+
 **b. Utilité dans l'infrastructre**
+
+Il permet de collecter des métriques système **sur l'ensemble des VMs de l'infrastructure** telles que l'utilisation du processeur, la mémoire utilisée, l'utilisation du disque et du réseau, ainsi que des informations sur le système d'exploitation telles que le nombre de processus en cours d'exécution et le nombre de fichiers ouverts.
 
 ``4. Conseiller``
 

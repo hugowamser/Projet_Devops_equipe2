@@ -15,6 +15,13 @@ D.GUERFA A.MOUZE S.TOUAHRI H.WAMSER
 
 ## Prérequis logiciels et/ou matériels :
 
+- Un hôte **ESXi** pour le déploiement de l'infrastructure.
+- Création de **5 vswitchs**.
+- **VMs Ubuntu** : 2048 Mo de RAM / 2 CPU / 20 Go de disque dur.
+- **VM Windows server 2019** : 4096 Mo de RAM / 2 CPU / 60 Go de disque dur.
+
+
+
 ---
 
 ## Documentation
@@ -27,7 +34,7 @@ Présentation de l’outils, Procédure d’installation, (toute autre procédur
 
 -	Configuration d'un serveur vCenter : 
 -	Création d'un cluster ESXi : 
--	Déploiement des machines virtuelles : **Vagrantfiles** pour créer et déployer les machines virtuelles nécessaires 
+-	Déploiement des machines virtuelles : **[Vagrantfile](Check/Vagrantfile)** pour créer et déployer les machines virtuelles nécessaires 
 -	Configuration de la surveillance : pour surveiller les performances et l'état de l'environnement, configuration des options de surveillance dans vCenter.
 -	Sécurisation de l'environnement : pour sécuriser l'environnement, vérification mises à jour de sécurité sont appliquées régulièrement et des politiques de sécurité sont mises en place pour les machines virtuelles et l'accès à l'environnement.
 -	Configuration des sauvegardes : pour protéger les données et les machines virtuelles contre les pannes matérielles ou les erreurs humaines, configuration des options de sauvegarde dans vCenter.
@@ -40,7 +47,7 @@ Ansible utilise une syntaxe simple et facile à comprendre pour décrire les tâ
 
 #### **Docker**
 
-
+ Docker est un logiciel libre permettant de créer, d'utiliser et de gérer des conteneurs logiciels. Il permet de créer des conteneurs logiciels, c'est-à-dire des environnements d'exécution isolés les uns des autres, qui permettent d'exécuter des applications. Docker est un logiciel libre permettant de créer, d'utiliser et de gérer des conteneurs logiciels. Il permet de créer des conteneurs logiciels, c'est-à-dire des environnements d'exécution isolés les uns des autres, qui permettent d'exécuter des applications.
 
 
 ### Services
