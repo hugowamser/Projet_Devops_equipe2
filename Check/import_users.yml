@@ -1,0 +1,29 @@
+---
+- name: Copier plusieurs fichiers sur un serveur Windows distant
+  hosts: windows-server
+  gather_facts: no
+  become: yes
+
+  vars_files:
+    - vars.yml
+
+  tasks:
+    - name: Copier les fichiers sur le serveur distant
+      win_copy:
+        src: "{{ item.src }}"
+        dest: "{{ item.dest }}"
+      with_items:
+        - { src: "importcsv_users.ps1", dest: "C:\Users\Administrateur\Desktop" }
+        - { src: "users_SOMILY.csv", dest: "C:\Users\Administrateur\Desktop" }
+      become: yes
+      become_method: runas
+      become_user: administrateur
+      become_password: "{{ admin_password }}"
+
+    - name: Exécuter le script PowerShell sur le serveur distant
+      win_shell: powershell.exe -ExecutionPolicy Bypass -File C:\Users\Administrateur\Desktop\importcsv_users.ps1
+      become: yes
+      become_method: runas
+      become_user: administrateur
+      become_password: "{{ admin_password }}"
+

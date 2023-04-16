@@ -1,0 +1,140 @@
+
+Vagrant.configure("2") do |config|
+		
+		workers=5
+	
+		config.vm.define "ansible" do |ansible|
+			ansible.vm.box = "bento/ubuntu-22.04"
+			ansible.vm.network "public_network", bridge: "TP-Link GIGABIT ETHERNET PCI EXPRESS ADAPTER"
+			ansible.vm.hostname = "ansible"
+			
+			ansible.vm.provider "virtualbox" do |v|
+			  v.name = "ansible"
+			  v.memory = 2048
+			  v.cpus = 2
+			end
+			
+			ansible.vm.provision "shell", inline: <<-SHELL
+				apt-get update
+        		apt-get install -y bash vim python3-pip
+				ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa
+      			cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+      			chmod 600 ~/.ssh/authorized_keys
+				apt-get install -y software-properties-common
+      			apt-add-repository --yes --update ppa:ansible/ansible
+      			apt-get install -y ansible
+        		SHELL
+				end
+
+		config.vm.define "wordpress" do |wordpress|
+			wordpress.vm.box = "bento/ubuntu-22.04"
+			wordpress.vm.network "public_network", bridge: "TP-Link GIGABIT ETHERNET PCI EXPRESS ADAPTER"
+			wordpress.vm.hostname = "wordpress"
+			
+			wordpress.vm.provider "virtualbox" do |v|
+			v.name = "wordpress"
+			v.memory = 2048
+			v.cpus = 2
+			end
+			
+			wordpress.vm.provision "shell", inline: <<-SHELL
+        		apt-get update
+        		apt-get install -y bash vim python3-pip
+				ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa
+      			cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+      			chmod 600 ~/.ssh/authorized_keys
+      		SHELL
+			end
+
+
+		config.vm.define "promgraf" do |promgraf|
+			promgraf.vm.box = "bento/ubuntu-22.04"
+			promgraf.vm.network "public_network", bridge: "TP-Link GIGABIT ETHERNET PCI EXPRESS ADAPTER"
+			promgraf.vm.hostname = "promgraf"
+			
+			promgraf.vm.provider "virtualbox" do |v|
+			v.name = "promgraf"
+			v.memory = 2048
+			v.cpus = 2
+			end
+			
+			promgraf.vm.provision "shell", inline: <<-SHELL
+       			apt-get update
+        		apt-get install -y bash vim python3-pip
+				ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa
+      			cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+      			chmod 600 ~/.ssh/authorized_keys
+      		SHELL
+			end
+		
+		config.vm.define "promgraf" do |promgraf|
+			promgraf.vm.box = "bento/ubuntu-22.04"
+			promgraf.vm.network "public_network", bridge: "TP-Link GIGABIT ETHERNET PCI EXPRESS ADAPTER"
+			promgraf.vm.hostname = "promgraf"
+			
+			promgraf.vm.provider "virtualbox" do |v|
+			v.name = "promgraf"
+			v.memory = 2048
+			v.cpus = 2
+			end
+			
+			promgraf.vm.provision "shell", inline: <<-SHELL
+       			apt-get update
+        		apt-get install -y bash vim python3-pip
+				ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa
+      			cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+      			chmod 600 ~/.ssh/authorized_keys
+      		SHELL
+			end
+
+		config.vm.define "services" do |services|
+			services.vm.box = "bento/ubuntu-22.04"
+			services.vm.network "public_network", bridge: "TP-Link GIGABIT ETHERNET PCI EXPRESS ADAPTER"
+			services.vm.hostname = "services"
+				
+			services.vm.provider "virtualbox" do |v|
+			v.name = "services"
+			v.memory = 2048
+			v.cpus = 2
+			end
+				
+			services.vm.provision "shell", inline: <<-SHELL
+				apt-get update
+				apt-get install -y bash vim python3-pip
+				ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa
+				cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+				chmod 600 ~/.ssh/authorized_keys
+			SHELL
+			end
+
+		config.vm.define "winserv" do |winserv|
+			winserv.vm.box = "opentable/win-2019-standard-amd64-nocm"
+			winserv.vm.network "public_network", bridge: "TP-Link GIGABIT ETHERNET PCI EXPRESS ADAPTER"
+			winserv.vm.hostname = "winserv"
+					
+			winserv.vm.provider "virtualbox" do |v|
+			vb.gui = true
+			v.name = "winserv"
+			v.memory = 4096
+			v.cpus = 2
+			end
+					
+			winserv.vm.provision "shell", inline: <<-SHELL
+				# Download the French language pack for Windows Server 2019
+				Invoke-WebRequest -Uri "https://download.microsoft.com/download/1/4/F/14F9DDB9-AAD9-4C1B-8EC2-2D49FDD1F11B/LIP/fr-fr/x64/WindowsServerLanguagePack_x64_fr-fr.cab" -OutFile "$env:TEMP\WindowsServerLanguagePack_x64_fr-fr.cab"
+
+				# Install the French language pack
+				Dism /Online /Add-Package /PackagePath:"$env:TEMP\WindowsServerLanguagePack_x64_fr-fr.cab" /NoRestart
+		  
+				# Set the Windows UI language to French
+				Set-WinSystemLocale fr-FR
+		  
+				# Disable Internet Explorer Enhanced Security Configuration
+				Disable-IEESC
+		  
+				# Reboot the machine to apply changes
+				Restart-Computer -Force
+			SHELL
+			end
+		
+end
