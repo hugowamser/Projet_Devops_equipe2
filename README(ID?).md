@@ -133,6 +133,9 @@ phpMyAdmin est un logiciel open source écrit en PHP qui permet de gérer l'admi
 
 **a. Introduction**
 
+Nginx est un serveur web open source et gratuit. Il est compatible avec plusieurs systèmes d'exploitation. De plus, il est possible de l'intégrer avec des outils de développement comme phpmyadmin et python.
+Nginx peut être utilisé de différentes manières, autant que serveur de proxy inverse, serveur de cache, serveur de messagerie et bien d'autres. Il possède une architecture événementielle asynchrone, ce qui signifie qu'il peut gérer de multiples connexions en utilisant peu de ressources système. Effectivement, l'un des avantages primordial de Nginx, c'est la faible utilisation de mémoire système. 
+
 **b. Utilité dans l'infrastructre**
 
 ``7. Gitea``
