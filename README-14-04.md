@@ -2,6 +2,11 @@
 
 D.GUERFA A.MOUZE S.TOUAHRI H.WAMSER 
 
+
+[toc]
+
+
+
 ## OBJECTIFS
 
 - **Déployer un environnement** de virtualisation VMware Vsphere en interne : un hôte ESXi sera nécessaire pour le déploiement de l'infrastructure. - VMware Vsphere.
