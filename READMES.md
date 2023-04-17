@@ -57,8 +57,9 @@ ansible-playbook -i inventory.ini playbook.yml
 
 Présentation des outils et procédure d’installation *(exemple : toutes autres procédures tels que le déploiement par exemple du docker)*.
 
----
-- **VMWare - Vsphere**
+### Outils
+
+- #### **VMWare - Vsphere**
 
 VMware vSphere est une plate-forme permettant la virtualisation, pour que les utilisateurs puissent virtualiser et gérer leur centre de données incluant le Central Processing Unit (CPU), la mise en réseau et le stockage. Plus précisément, vSphere gère ces infrastructures sous forme d'environnement d'exploitation unifié, c’est-à-dire que plusieurs machines virtuelles peuvent s’exécuter sur une seule machine physique. VMware vSphere comprend principalement vCenter Server et ESXi. Ce dernier, dit hyperviseur ESXi est une plate-forme de virtualisation s’exécutant sur un serveur physique afin de créer des machines virtuelles. Quant au service vCenter Server, il permet de gérer plusieurs hôtes ESXi connectés dans un réseau ainsi que des ressources d’hôtes.
 
@@ -67,10 +68,8 @@ VMware vSphere est une plate-forme permettant la virtualisation, pour que les ut
 _-_ Configuration de la surveillance : les performances et l’état de l’environnement
 _-_ Sécurisation de l’environnement : mises à jour régulières appliquées de patchs de sécurité et politiques de sécurité mise en place pour les machines virtuelles et l’accès à l’environnement.
 _-_ Configuration des sauvegardes : protection des données et des machines virtuelles contre les pannes matérielles ou contre des erreurs humaine. La configuration des options de sauvegarde se fait sur vCenter.
-  
----
 
-- **Docker**
+- #### **Docker**
 
 Docker se définit comme étant une plateforme open source, il repose sur un kernel Linux. Les conteneurs Docker fournissent un environnement isolé pour l'exécution d’application en local, dans le centre de données client, dans un fournisseur de services externe et/ou dans le cloud. Le fonctionnement réside dans l'exécution d’un hôte Docker, sur lequel sont déployées des images Docker, comprenant l’application et ses dépendances. Une image conteneur est définie comme un moyen d’empaqueter une application ou un service pour le déployer par la suite. Par ailleurs, l’image permet de garder un environnement similaire entre les différents déploiements.
 
@@ -78,9 +77,7 @@ Docker se définit comme étant une plateforme open source, il repose sur un ker
 
 Création, déploiement et execution de services rapide des services sur l'ensemble de l'infrastructure.
 
----
-
-- **Ansible**
+- #### **Ansible**
 
 Ansible est un outil open-source de gestion de configuration. Il permet de déployer rapidement des serveurs, d’automatiser les tâches récurrentes et de maintenir la cohérence de la configuration des serveurs. Il permet de faire des mise a jour de services déployés ainsi que le re-déployement de service en cas de panne. Ansible utilise une syntaxe simple et facile à comprendre pour décrire les tâches à effectuer sur les serveurs.
 
@@ -88,9 +85,8 @@ Ansible est un outil open-source de gestion de configuration. Il permet de dépl
 
 Deploiement des services sur les machines virtuelles pour automatiser les tâches et gérer les mises à jour ainsi qu'un re-déploiement en cas de panne. 
 
----
 
-- **Git**
+- #### **Git**
 
 Outil utilisé permettant de travailler sur des versions différentes de l'état d'un projet. Il permet le travail en groupe simultanément, tout en ayant accès à un hsitorique détaillé des modifications.
 
@@ -98,13 +94,11 @@ Outil utilisé permettant de travailler sur des versions différentes de l'état
 
 ### Services utilisés
 
----
-
-- **AD**
+- #### **AD**
 
 Active Directory est un service d’annuaire développé par Microsoft pour gérer l’authentification des utilisateurs et des ordinateurs. Il permet de centraliser l’administration des comptes d’utilisateurs et de définir des politiques de sécurité pour l’ensemble du réseau (*Group Policy Object GPO*). Des informations supplémentaires ont été détaillés dans le fichier suivant : [README](Infra/Active_directory/README.md).
 
--**DNS** 
+- #### **DNS** 
 
 DNS (*Domain Name System*) est un service qui permet de résoudre les noms de domaine en adresses IP. Il s'agit d'une solution open-source.
 
@@ -112,7 +106,7 @@ DNS (*Domain Name System*) est un service qui permet de résoudre les noms de do
 
 Permet l'authentification des utilisateurs, configurer un serveur DNS pour la résolution des noms de domaine et la mise en place de GPOs personnalisées en fonction des services.
 
-- **DHCP**
+- #### **DHCP**
 
 Le DHCP (Dynamic Host Control Protocol) est un service permettant l'attribution d'adresses IP et d'informations complémentaires (adresse IP du routeur, le masque de sous-réseau, la passerelle par défaut). Il est possible de fournir une étendue d'adresse IP, d'en retirer certaine, et il est aussi possible de faire conserver une adresse IP pendant une durée déterminée.
 
@@ -120,104 +114,58 @@ Le DHCP (Dynamic Host Control Protocol) est un service permettant l'attribution 
 
 Simplifier la gestion du réseau tout en évitant de potentielles erreurs.
 
----
 
-- **Site web - Wordpress**
-
-**Définition**
-
-WordPress est un logiciel de publication sur Internet de sites web et de blogs, simple d'utilisation. C'est une plateforme de publication librement distribuable, compatible, personnalisable, rapide, légère et gratuite. Créer en 2003, il est utilisé par de nombreux sites web dans le monde entier.
+- #### **Site web - Wordpress**
 
 Création et hébergement d’un site web/blog sur WordPress hébergé en interne, sécurisé (protocole HTTPS), evolutif via docker et ansible.
 
----
+*WordPress est un logiciel de publication sur Internet de sites web et de blogs, simple d'utilisation. C'est une plateforme de publication librement distribuable, compatible, personnalisable, rapide, légère et gratuite.*
 
-- **Base de données - MYsql**
+- #### **Base de données - MySql**
 
 MySQL Database est un service de base de données open source, qui combine les transactions, l’analyse et les services d’apprentissage automatique. Il est disponible sur Oracle Cloud Infrastructure, Amazon Web Service et Oracle Database Service in Azure (ODSA) SQL (Structured Query Language) est un langage normalisé et utilisé pour accéder aux bases de données.
 
-**``Utilité dans l'infrastructre``**
+Elle permet de gérer et stocker les données des services, tels que le WordPress.
 
-Gérer et stocker les données des services, tels que le WordPress. 
+- #### **PHPmyAdmin**
 
----
+phpMyAdmin est un logiciel open source écrit en PHP qui permet de gérer l'administration d’un serveur de base de données MySQL ou MariaDB à partir d'une interface web. Il est possible pour les utilisateurs de réaliser la plupart des tâches d’administration, dont la création d’une base de données, l’exécution de requêtes, et l’ajout de plusieurs comptes. Il est requis de posseder un serveur web (tel que Apache ou Nginx) afin d'installer les fichiers de phpMyAdmin.
 
-- **PHPmyAdmin**
-
-phpMyAdmin est un logiciel open source écrit en PHP qui permet de gérer l'administration d’un serveur de base de données MySQL ou MariaDB à partir d'une interface web. Il est possible pour les utilisateurs de réaliser la plupart des tâches d’administration, dont la création d’une base de données, l’exécution de requêtes, et l’ajout de plusieurs comptes. IL est requis de posseder un serveur web (tel que Apache ou Nginx) afin d'installer les fichiers de phpMyAdmin.
-
-**``Utilité dans l'infrastructre``**
-
----
-
-- **Nginx - serveur web**
+- #### **Nginx - serveur web**
 
 Nginx est un serveur web open source et gratuit. Il est compatible avec plusieurs systèmes d'exploitation. De plus, il est possible de l'intégrer avec des outils de développement comme phpmyadmin et python.
 Nginx peut être utilisé de différentes manières, autant que serveur de proxy inverse, serveur de cache, serveur de messagerie et bien d'autres. Il possède une architecture événementielle asynchrone, ce qui signifie qu'il peut gérer de multiples connexions en utilisant peu de ressources système. Effectivement, l'un des avantages primordial de Nginx, c'est la faible utilisation de mémoire système. 
 
-**``Utilité dans l'infrastructre``**
+- #### **GitHub**
 
----
-
-``8. GitHub``
+C'est un service d'ébergement open-source, permettant d etravailler de man,ière efficace en groupe au sein d'un projet pour toutes les questions de partages de scripts, de fichiers, etc...
 
 
-**``Utilité dans l'infrastructre``**
+- #### Monitoring
 
-***
+  - **Prometheus**
 
-### Surveillance
-
-- **Prometheus**
-
-Prometheus est un outil de surveillance de la performance qui collecte des données sur les ressources système, les applications et les services.
-
-**``Utilité dans l'infrastructre``**
-
-Surveiller les performances des applications et des services, en collectant les métriques de notre infrastructure.
-
----
-
-- **Grafana**
-
-Grafana est une plateforme de visualisation de données qui permet de créer des tableaux de bord et des graphiques pour visualiser les données collectées par différents types de sources de données tels que les bases de données et les services cloud.
-
-**``Utilité dans l'infrastructre``**
-
-Visualisation et analyse des données de performance de l'infrastructure afin de l'améliorer.
+      Prometheus est un outil de surveillance de la performance qui collecte des données sur les ressources système, les applications et les services.
 
 
-*Globalement, Prometheus et Grafana sont deux solutions open-source de monitoring populaires ayant donc une grande communauté.*
+  - **Grafana**
+      
+      Grafana est une plateforme de visualisation de données qui permet de créer des tableaux de bord et des graphiques pour visualiser les données collectées par différents types de sources de données tels que les bases de données et les services cloud.
 
----
+  
+  *Globalement, Prometheus et Grafana sont deux solutions open-source de monitoring populaires ayant donc une grande communauté.*
 
-- **Node Exporter**
 
-Node Exporter est un outil open source de monitoring système pour les serveurs utilisant les systèmes d'exploitations Linux et Windows. 
+- #### **Node Exporter**
 
-**``Utilité dans l'infrastructre``**
-
-Il permet de collecter des métriques système **sur l'ensemble des VMs de l'infrastructure** telles que l'utilisation du processeur, la mémoire utilisée, l'utilisation du disque et du réseau, ainsi que des informations sur le système d'exploitation telles que le nombre de processus en cours d'exécution et le nombre de fichiers ouverts.
+Node Exporter est un outil open source de monitoring système pour les serveurs utilisant les systèmes d'exploitations Linux et Windows.
+Il permet de collecter des métriques système sur l'ensemble des VMs de l'infrastructure telles que l'utilisation du processeur, la mémoire utilisée, l'utilisation du disque et du réseau, ainsi que des informations sur le système d'exploitation telles que le nombre de processus en cours d'exécution et le nombre de fichiers ouverts.
 Ces métriques seront ensuite exposées à Prometheus.
 
----
+- #### **Cadvisor**
 
-- **Cadvisor**
-
-cAdvisor est un outil de surveillance de conteneurs open source qui permet de collecter, d'aggréger et d'exposer des métriques et des informations sur les conteneurs.
-
-**``Utilité dans l'infrastructre``**
-
-Dans cette infrastructure il sera déployé sur tous les hôtes où sont déployés des conteneurs car il permet de collecter des métriques sur les conteneurs et les images Docker qui seront ensuite exposées à Prometheus.
-____
-
-## Services de l'entreprise
-
-- **Wordpress**
-
-- **Grafana**
-
-- **PHPmyAdmin**
+Cadvisor est un outil de surveillance de conteneurs open source qui permet de collecter, d'aggréger et d'exposer des métriques et des informations sur les conteneurs.
+*Dans cette infrastructure il sera déployé sur tous les hôtes où sont déployés des conteneurs car il permet de collecter des métriques sur les conteneurs et les images Docker qui seront ensuite exposées à Prometheus.*
 
 ____
 
@@ -244,7 +192,7 @@ ____
 
 ## PRA / sinistres / reprise d'activité
 
-- **Les différents scénarios de sinistre majeur**
+- ### **Les différents scénarios de sinistre majeur**
 
 _-_ Épidémie tels que la crise sanitaire du Coronavirus
 _-_ Catastrophe naturelle, par exemple une inondation
@@ -252,7 +200,7 @@ _-_ Incendie
 _-_ Panne du système dû au virus, au cyberattaque, au cybercrime, à la perte, au vol ou à la disparition de données sensible.
 
 
-- **Mise en place d'un plan de reprise d'activité**
+- ### **Mise en place d'un plan de reprise d'activité**
 
 Pour garantir la continuité de l’activité en cas de sinistre il est nécessaire d’établir un plan de reprise d’activité (PRA). Dans un PRA on retrouve plusieurs éléments notamment :
 
@@ -265,7 +213,7 @@ _-_ Identification du système de secours à mettre en place en cas de sinistre 
 _-_ Choisir un modèle de sauvegarde de données.
 _-_ Prévoir des mesures de mises à jour régulières pour tester le plan de reprise d’activités .
 
-- **Les solutions de reprise d'activité**
+- ### **Les solutions de reprise d'activité**
 
 Les machines virtuelles que nous déployons proviennent de la plateforme VMware vSphere. Celle-ci propose des solutions de reprise d’activité après un sinistre ou un incident à l’aide de différents produits :
 
@@ -284,15 +232,12 @@ ____
 - **Alertmanager** permettant de recevoir des notifications par mail, teams etc sur les alertes de prometheus
 - **Apache (Kafka)** est une plateforme distribuée de diffusion de données en continu, capable de publier, stocker, traiter et souscrire à des flux d’enregistrement en temps réel -solution Open Source de diffusion de données en continu capable de répondre aux divers besoins des entreprises.
 - **Cybersécurité** :
-
-1. **Qualys patch management** permet de patcher les serveurs d’ils sont en vulnérailité
-2. **Antivirus (exemple : Mcafee)**
-3. **System Center Data Protection Manager (DPM)** outil de backup de microsoft ou **Veeam** *- mais payant -*
-
-- **Elastic et Kibana** monitorer tous ce qui est log, moteur de recherche et d’analyse *- suite ELK*
-- **Sheduler** permet de configurer et de planifier des taches -automatisation- selon critères définit
-  
-*Redondances des VM permettant une reprise d’activité immédiate en cas de panne et plusieurs ESXI permettant la redondances si une VM avec un service tombe en panne.*
+  - **Qualys patch management** permet de patcher les serveurs d’ils sont en vulnérailité
+  - **Antivirus (exemple : Mcafee)**
+  - **System Center Data Protection Manager (DPM)** outil de backup de microsoft ou **Veeam** *- mais payant -*
+  - **Elastic et Kibana** monitorer tous ce qui est log, moteur de recherche et d’analyse *- suite ELK*
+  - **Sheduler** permet de configurer et de planifier des taches -automatisation- selon critères définit
+  - Redondances des VM permettant une reprise d’activité immédiate en cas de panne et plusieurs ESXI permettant la redondances si une VM avec un service tombe en panne.
 
 ____
 
