@@ -12,7 +12,6 @@
 
 *Comment faire pour que l'entreprise SOMILY puisse évoluer en terme de services ?*
 
-
 ____
 
 ## Objectifs
@@ -77,7 +76,7 @@ Docker se définit comme étant une plateforme open source, il repose sur un ker
 
 **``Utilité dans l'infrastructre``**
 
-Création, déploiement et execution des services dans un conteneur afin d'améliorer l'efficacité des services sur l'ensemble de l'infrastructure.
+Création, déploiement et execution de services rapide des services sur l'ensemble de l'infrastructure.
 
 ---
 
