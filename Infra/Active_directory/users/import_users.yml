@@ -1,6 +1,6 @@
 ---
 - name: Copier plusieurs fichiers sur un serveur Windows distant
-  hosts: windows-server
+  hosts: winsrv
   gather_facts: no
   become: yes
 

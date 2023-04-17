@@ -1,9 +1,30 @@
 # Active Directory
 
+[toc]
+
+## Users
+
+### users_SOMILY.csv, Import_users et Importcsv_users
+
+- **users_SOMILY.csv**
+Fichier au format csv, listant l'ensemble des utilisateurs de chez SOMILY ainsi que leurs services respectifs
+
+- **importcsv_users.ps1**
+Script powershell qui permet la création des OUs, sous OUs et le rangement des différents utilisateurs dans ces derniers
+
+- **import_users.yml**
+Script Ansible qui permet de copier le fichier importcsv_users.ps1 et le fichier users_SOMILY.csv pour et l'execution du script powershell.
+
+### Commande powershell d'execution
+
+```powershell
+Ansible-playbook -i ./Ansible/playbooks/inventory.init import_users.yml
+```
+
 ## Configuration des GPO
 
 - **Définir la politique de mot de passe :**
-Complexité de mot de passe, telles que la longueur minimale, l'utilisation de caractères spéciaux, la durée de validité et la restriction de réutilisation des mots de passe précédents.
+Complexité de mot de passe, telles que la longueur minimale, l'utilisation de caractères spéciaux, la durée de validité et la restriction de réutilisation des mots de passe précédents
 
 - **Restreindre l'accès au panneau de configuration :**
 Limiter aussi l'acces au cmd et powershell
