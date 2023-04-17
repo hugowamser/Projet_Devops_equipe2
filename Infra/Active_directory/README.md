@@ -2,6 +2,28 @@
 
 ## Configuration des GPO
 
+- **Définir la politique de mot de passe :**
+Complexité de mot de passe, telles que la longueur minimale, l'utilisation de caractères spéciaux, la durée de validité et la restriction de réutilisation des mots de passe précédents.
+
+- **Restreindre l'accès au panneau de configuration :**
+Limiter aussi l'acces au cmd et powershell
+  
+- **Configurer le bureau :**
+Les paramètres de fond d'écran, d'économiseur d'écran, de thème, de police de caractères
+
+- **Gérer les applications :**
+Restreindre l'exécution de certaines applications ou d'autoriser l'exécution uniquement de certaines applications approuvées
+- **Configurer les paramètres de sécurité :**
+Les paramètres de sécurité, tels que le niveau de sécurité du navigateur web, les règles de pare-feu, les paramètres de sécurité réseau
+
+- **Configurer les paramètres de compte utilisateur :**
+Définir les paramètres de compte utilisateur l'expiration du compte, les restrictions de mot de passe
+
+- **Configurer les paramètres de démarrage de session :**
+Suppression de l'écran de bienvenue, l'exécution de scripts de connexion, l'affichage de messages d'informations
+
+- **Limiter l'accès aux périphériques**
+Limiter l'accès aux périphériques, les ports USB, les CD/DVD, les disques amovibles
 
 ## Sécurité et sauvegarde
 
