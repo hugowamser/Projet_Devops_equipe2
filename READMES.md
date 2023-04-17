@@ -112,11 +112,9 @@ DNS (*Domain Name System*) est un service qui permet de résoudre les noms de do
 
 Permet l'authentification des utilisateurs, configurer un serveur DNS pour la résolution des noms de domaine et la mise en place de GPOs personnalisées en fonction des services.
 
-
-
 - **DHCP**
 
-Le DHCP (Dynamic Host Control Protocol) est un service permettant l'attribution d'adresses IP et d'informations complémentaires (adresse IP du routeur, le masque de sous-réseau, la passerelle par défaut) aux clients. Par ailleurs, il permet la conservation des adresses IP pendant une durée définie.
+Le DHCP (Dynamic Host Control Protocol) est un service permettant l'attribution d'adresses IP et d'informations complémentaires (adresse IP du routeur, le masque de sous-réseau, la passerelle par défaut). Il est possible de fournir une étendue d'adresse IP, d'en retirer certaine, et il est aussi possible de faire conserver une adresse IP pendant une durée déterminée.
 
 **``Utilité dans l'infrastructre``**
 
@@ -126,11 +124,9 @@ Simplifier la gestion du réseau tout en évitant de potentielles erreurs.
 
 - **Site web - Wordpress**
 
-**a. Introduction**
+**Définition**
 
 WordPress est un logiciel de publication sur Internet de sites web et de blogs, simple d'utilisation. C'est une plateforme de publication librement distribuable, compatible, personnalisable, rapide, légère et gratuite. Créer en 2003, il est utilisé par de nombreux sites web dans le monde entier.
-
-**``Utilité dans l'infrastructre``**
 
 Création et hébergement d’un site web/blog sur WordPress hébergé en interne, sécurisé (protocole HTTPS), evolutif via docker et ansible.
 
