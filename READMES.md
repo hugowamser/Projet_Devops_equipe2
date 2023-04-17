@@ -86,7 +86,13 @@ Ansible est un outil open-source de gestion de configuration. Il permet de dépl
 
 **``Utilité dans l'infrastructre``**
 
-Deploiement des services sur les machines virtuelles pour automatiser les tâches et gérer les mises à jour.
+Deploiement des services sur les machines virtuelles pour automatiser les tâches et gérer les mises à jour ainsi qu'un re-déploiement en cas de panne. 
+
+---
+
+- **Git**
+
+Outil utilisé permettant de travailler sur des versions différentes de l'état d'un projet. Il permet le travail en groupe simultanément, tout en ayant accès à un hsitorique détaillé des modifications.
 
 ---
 
@@ -94,23 +100,19 @@ Deploiement des services sur les machines virtuelles pour automatiser les tâche
 
 ---
 
-- **AD/DNS**
+- **AD**
 
-Active Directory est un service d’annuaire développé par Microsoft pour gérer l’authentification des utilisateurs et des ordinateurs · Permet de centraliser l’administration des comptes d’utilisateurs et de définir des politiques de sécurité pour l’ensemble du réseau · DNS est un service qui permet de résoudre les noms de domaine en adresses IP · Solutions open-source telles que Samba pour mettre en place un service Active Directory sur des serveurs Linux, et Bind pour mettre en place un service DNS · Configurer un serveur DNS pour la résolution des noms de domaine.
+Active Directory est un service d’annuaire développé par Microsoft pour gérer l’authentification des utilisateurs et des ordinateurs. Il permet de centraliser l’administration des comptes d’utilisateurs et de définir des politiques de sécurité pour l’ensemble du réseau (*Group Policy Object GPO*). Des informations supplémentaires ont été détaillés dans le fichier suivant : [README](Infra/Active_directory/README.md).
+
+-**DNS** 
+
+DNS (*Domain Name System*) est un service qui permet de résoudre les noms de domaine en adresses IP. Il s'agit d'une solution open-source.
 
 **``Utilité dans l'infrastructre``**
 
-- Configurer un Active Directory pour l’authentification des utilisateurs.
-- Configurer un serveur DNS pour la résolution des noms de domaine.
-- Renommer le PC (exemple : SOMILY-AD01).
-- Attribution IP Statique *(c'est une adresse IP fixe)*.
-- Création des OUs.
-- Création des membres de chaque OU.
-- Installation et configuration d’un serveur AD secondaire RODC.
-- Mise en place et planification de réplications *(fréquence, coût pour définir les priorités)*, commande pour vérifier l’état de réplication : **repadmin /showrepl**.
-- Mise en place de GPOs personnalisées en fonction des services.
+Permet l'authentification des utilisateurs, configurer un serveur DNS pour la résolution des noms de domaine et la mise en place de GPOs personnalisées en fonction des services.
 
----
+
 
 - **DHCP**
 
