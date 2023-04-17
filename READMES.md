@@ -12,7 +12,7 @@
 
 *Comment faire pour que l'entreprise SOMILY puisse évoluer en terme de services ?*
 
-<span style="color: red;">test fddf dfd</span>
+
 ____
 
 ## Objectifs
