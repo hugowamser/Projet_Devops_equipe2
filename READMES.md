@@ -1,8 +1,10 @@
+<center>
 
 # Projet_Devops_equipe2
 
 *D.GUERFA A.MOUZE S.TOUAHRI H.WAMSER*
 
+</center>
 
 [TOC]
 
