@@ -1,0 +1,53 @@
+- name: Installation de Node exporter sur tous les hôtes Linux
+- hosts: serveurs_web
+  become: true
+
+  tasks:
+    - name: Installer docker-compose
+      apt:
+        name: docker-compose
+        state: present
+
+    - name: Déployer Wordpress
+      command: docker-compose up -d wordpress
+      args:
+        chdir: /docker-compose.yml
+        when: inventory_hostname == 'wordpress'
+
+     - name: Déployer la database et l'interface graphique
+      command: docker-compose up -d db phpmyadmin
+      args:
+        chdir: /docker-compose.yml
+        when: inventory_hostname == 'db'
+
+    - name: Déployer Prometheus et Grafana
+      command: docker-compose up -d db prometheus grafana
+      args:
+        chdir: /docker-compose.yml
+        when: inventory_hostname == 'prom'
+
+    - name: Déployer Node Exporter
+      command: docker-compose up -d db nodeexporter cadvisor
+      args:
+        chdir: /docker-compose.yml
+        when: inventory_hostname == 'linux'
+
+    - name: Installer Node Exporter sur windows server package MSI
+      win_package:
+        path: fichier.msi
+        state: present
+        when: inventory_hostname == 'winserv'
+
+    - name: Copier la configuration de reverse proxy
+      template:
+        src: nginx-reverse-proxy.conf.j2
+        dest: /etc/nginx/conf.d/reverse-proxy.conf
+      vars:
+        nginx_server_ip: "192.168.4.2"
+
+    - name: Redémarrer Nginx
+      systemd:
+        name: nginx
+        state: restarted 
+
+    
