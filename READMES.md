@@ -37,14 +37,14 @@ ____
 
 Pour déployer cette stack, il faut suivre les étapes suivantes :
 
-- **Etape 1** : executer le **[Vagrantfile](Check/Vagrantfile)** pour deployer les VMs dont notre VM principale avec Ansible et Docker.
+- **Etape 1** : executer le **[Vagrantfile](Vagrantfile)** pour deployer les VMs dont notre VM principale avec Ansible et Docker.
 Toutes les VMs service déployées auront une IP statique et docker installé.
   
 ```
 vagrant up
 ```
 
-- **Etape 2** : executer le **[playbook.yml](Check/playbook.yml)** pour configurer les VMs.
+- **Etape 2** : executer le **[deploy_stack.yml](Ansible/playbooks/deploy_stack.yml)** pour configurer les VMs.
   
 ```
 ansible-playbook -i inventory.ini playbook.yml
