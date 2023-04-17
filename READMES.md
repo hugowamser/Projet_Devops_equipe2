@@ -64,18 +64,15 @@ VMware vSphere est une plate-forme permettant la virtualisation, pour que les ut
 
 **``Utilité dans l'infrastructre``**
 
-_-_ Configuration d’un serveur vCenter
-_-_ Création d’un cluster ESXi
-_-_ Déploiement des machines virtuelles : Vagrantfiles pour créer et déployer les machines virtuelles nécessaires.
-_-_ Configuration de la surveillance : pour surveiller les performances et l’état de l’environnement, configuration des options de surveillance dans vCenter.
-_-_ Sécurisation de l’environnement : pour sécuriser l’environnement, vérification mises à jour de sécurité sont appliquées régulièrement et des politiques de sécurité sont mises en place pour les machines virtuelles et l’accès à l’environnement.
-_-_ Configuration des sauvegardes : pour protéger les données et les machines virtuelles contre les pannes matérielles ou les erreurs humaines, configuration des options de sauvegarde dans vCenter.
+_-_ Configuration de la surveillance : les performances et l’état de l’environnement
+_-_ Sécurisation de l’environnement : mises à jour régulières appliquées de patchs de sécurité et politiques de sécurité mise en place pour les machines virtuelles et l’accès à l’environnement.
+_-_ Configuration des sauvegardes : protection des données et des machines virtuelles contre les pannes matérielles ou contre des erreurs humaine. La configuration des options de sauvegarde se fait sur vCenter.
   
 ---
 
 - **Docker**
 
-Docker se définit comme étant un projet open source, il repose sur un kernel Linux. Les conteneurs Docker fournissent un environnement isolé pour l'exécution de l’application, ils sont exécutables : en local dans le centre de données client, dans un fournisseur de services externe et dans le cloud. Le fonctionnement réside dans l'exécution d’un hôte Docker, sur lequel sont déployées les images Docker, comprenant l’application et ses dépendances. Une image conteneur est définie comme un moyen d’empaqueter une application ou un service pour le déployer par la suite. Par ailleurs, l’image permet de garder un environnement similaire entre les différents déploiements.
+Docker se définit comme étant une plateforme open source, il repose sur un kernel Linux. Les conteneurs Docker fournissent un environnement isolé pour l'exécution d’application en local, dans le centre de données client, dans un fournisseur de services externe et/ou dans le cloud. Le fonctionnement réside dans l'exécution d’un hôte Docker, sur lequel sont déployées des images Docker, comprenant l’application et ses dépendances. Une image conteneur est définie comme un moyen d’empaqueter une application ou un service pour le déployer par la suite. Par ailleurs, l’image permet de garder un environnement similaire entre les différents déploiements.
 
 **``Utilité dans l'infrastructre``**
 
