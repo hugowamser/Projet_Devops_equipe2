@@ -82,7 +82,7 @@ Création, déploiement et execution de services rapide des services sur l'ensem
 
 - **Ansible**
 
-Ansible est un outil open-source de gestion de configuration. Il permet de déployer rapidement des serveurs, d’automatiser les tâches récurrentes et de maintenir la cohérence de la configuration des serveurs. Ansible utilise une syntaxe simple et facile à comprendre pour décrire les tâches à effectuer sur les serveurs.
+Ansible est un outil open-source de gestion de configuration. Il permet de déployer rapidement des serveurs, d’automatiser les tâches récurrentes et de maintenir la cohérence de la configuration des serveurs. Il permet de faire des mise a jour de services déployés ainsi que le re-déployement de service en cas de panne. Ansible utilise une syntaxe simple et facile à comprendre pour décrire les tâches à effectuer sur les serveurs.
 
 **``Utilité dans l'infrastructre``**
 
