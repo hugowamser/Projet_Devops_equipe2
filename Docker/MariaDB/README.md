@@ -1,4 +1,6 @@
-Afin d’installer Docker, les commandes Linux ont été utilisé :
+# installation Docker
+
+> Afin d’installer Docker, les commandes Linux ont été utilisé :
 
 - Vérifier la version de l’OS avec la commande :
 
