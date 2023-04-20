@@ -1,6 +1,8 @@
 - name: Installation de Node exporter sur tous les hôtes Linux
-- hosts: serveurs_web
+- hosts: linux
   become: true
+  vars: 
+    docker_compose_file: /Docker/docker-compose/docker-compose.yml
 
   tasks:
     - name: Installer docker-compose
@@ -10,44 +12,44 @@
 
     - name: Déployer Wordpress
       command: docker-compose up -d wordpress
+      delegate_to: wordpress
       args:
-        chdir: /docker-compose.yml
-        when: inventory_hostname == 'wordpress'
-
+        chdir: "{{ docker_compose_file }}"
+        
      - name: Déployer la database et l'interface graphique
       command: docker-compose up -d db phpmyadmin
+      delegate_to: db
       args:
-        chdir: /docker-compose.yml
-        when: inventory_hostname == 'db'
-
+        chdir: "{{ docker_compose_file }}"
+        
     - name: Déployer Prometheus et Grafana
       command: docker-compose up -d db prometheus grafana
+      delegate_to: prom
       args:
-        chdir: /docker-compose.yml
-        when: inventory_hostname == 'prom'
+        chdir: "{{ docker_compose_file }}"
 
     - name: Déployer Node Exporter
       command: docker-compose up -d db nodeexporter cadvisor
+      delegate_to: linux
       args:
-        chdir: /docker-compose.yml
-        when: inventory_hostname == 'linux'
-
+        chdir: "{{ docker_compose_file }}"
+      
     - name: Installer Node Exporter sur windows server package MSI
+    delegate_to: winserv
       win_package:
         path: fichier.msi
         state: present
-        when: inventory_hostname == 'winserv'
 
-    - name: Copier la configuration de reverse proxy
-      template:
-        src: nginx-reverse-proxy.conf.j2
-        dest: /etc/nginx/conf.d/reverse-proxy.conf
-      vars:
-        nginx_server_ip: "192.168.4.2"
+    # - name: Copier la configuration de reverse proxy
+    #   template:
+    #     src: nginx-reverse-proxy.conf.j2
+    #     dest: /etc/nginx/conf.d/reverse-proxy.conf
+    #   vars:
+    #     nginx_server_ip: "192.168.4.2"
 
-    - name: Redémarrer Nginx
-      systemd:
-        name: nginx
-        state: restarted 
+    # - name: Redémarrer Nginx
+    #   systemd:
+    #     name: nginx
+    #     state: restarted 
 
     
