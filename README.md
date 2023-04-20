@@ -138,7 +138,7 @@ Nginx peut être utilisé de différentes manières, autant que serveur de proxy
 
 - #### **GitHub**
 
-C'est un service d'ébergement open-source, permettant d etravailler de man,ière efficace en groupe au sein d'un projet pour toutes les questions de partages de scripts, de fichiers, etc...
+C'est un service d'hébergement open-source, permettant d etravailler de man,ière efficace en groupe au sein d'un projet pour toutes les questions de partages de scripts, de fichiers, etc...
 
 
 - #### Monitoring
@@ -238,6 +238,17 @@ ____
   - **Elastic et Kibana** monitorer tous ce qui est log, moteur de recherche et d’analyse *- suite ELK*
   - **Sheduler** permet de configurer et de planifier des taches -automatisation- selon critères définit
   - Redondances des VM permettant une reprise d’activité immédiate en cas de panne et plusieurs ESXI permettant la redondances si une VM avec un service tombe en panne.
+
+___
+
+- Davantage d'ESXI 'pour la redondance, la disponibilité et sauvegarde des VMs'
+- Active directory pour la gestion des utilisateurs, des groupes et des ordinateurs, ainsi que la gestion des droits d'accès, des contrôles d'accès et des politiques de sécurité.
+- intégration de Jenkins pour la gestion des taches et automatisation
+- Intégration de Kubernetes pour la gestion des conteneurs, des applications et des services, ainsi que la gestion de la configuration et du déploiement.
+- Mise en place de load balancing pour répartir la charge entre les différents serveurs, ainsi que pour assurer la disponibilité des services.
+- Mise en place du cloud privé pour la gestion des ressources informatiques et la fourniture de services informatiques à l'entreprise.
+- Alertmanager pour la gestion des notifications, des alertes et des événements.
+- Elastic et Kibana pour la gestion des logs, la recherche et l'analyse, ainsi que la visualisation des données.
 
 ____
 
